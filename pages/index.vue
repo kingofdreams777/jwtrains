@@ -3,7 +3,7 @@
 
 <template>
     <div class="flex flex-col place-items-center w-full">
-        <div class="prose bg-base-200">
+        <div class="prose">
             <h1>Do You want to repair your Lionel Post War trains?</h1>
 
             <p>The articles purchased through this website will enable you to maintain your <i>0-27</i> and O guage model

@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="flex flex-col items-center">
-        <img class="h-auto max-w-full rounded border bg-black p-1 dark:border-neutral-700 dark:bg-neutral-800"
+        <img class="h-auto max-w-full rounded border bg-black p-1 dark:border-neutral-700 dark:bg-neutral-800 transition-shadow"
             src="@/assets/images/indexbanner.jpg" alt="Banner">
     </div>
 </template>
