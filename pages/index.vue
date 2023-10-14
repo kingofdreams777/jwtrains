@@ -3,7 +3,7 @@
 
 <template>
     <div class="flex flex-col place-items-center w-full">
-        <div class="prose">
+        <div class="bg-accent prose">
             <h1>Do You want to repair your Lionel Post War trains?</h1>
 
             <p>The articles purchased through this website will enable you to maintain your <i>0-27</i> and O guage model
@@ -53,7 +53,7 @@
                 open the file is to insert the CD into your CD-ROM drive and it will automatically run the file. MacIntosh
                 users must use their PC Emulator.</p>
 
-            <h1>You may find the <NuxtLink to="/bulb_index">Light Bulb Index</NuxtLink>
+            <h1>You may find the <NuxtLink to="/bulb_list">Light Bulb Index</NuxtLink>
             </h1>
             <p>to contain useful information. I've listed the bulb type for all the Lionel PostWar locomotives, tenders,
                 operating cars, accessories and transformers. It's important to use the correct bulb to avoid damage to

@@ -3,7 +3,7 @@
         <div class="hero-content text-center">
             <div class="max-w-md">
                 <h1 class="text-5xl font-bold">How to order articles</h1>
-                <div class="prose">
+                <div class="prose text-left">
                     <ol>
                         <li>
                             <p>
@@ -30,12 +30,15 @@
                             </p>
                         </li>
                     </ol>
-                    <p><i>JWTRAINS</i>
-                        <br>
-                        <i>P.O. Box 601371</i>
-                        <br>
-                        <i>San Diego, CA 92160</i>
-                    </p>
+
+                    <div class="text-center">
+                        <p><i>JWTRAINS</i>
+                            <br>
+                            <i>P.O. Box 601371</i>
+                            <br>
+                            <i>San Diego, CA 92160</i>
+                        </p>
+                    </div>
 
                     <p><i>Addresses outside of the continental U.S. should check the <a
                                 href="http://ircalc.usps.gov/">international postal calculator</a> for shipping costs. There
