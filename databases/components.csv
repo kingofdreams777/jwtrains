@@ -1,0 +1,715 @@
+number,description,gauge,set,image
+44,"locomotive, missile launcher, U.S. Army",O,2527,44_web.jpg
+45,"locomotive, missile launcher, U.S.M.C.",0-27,1805,45_web.jpg
+88,"controller, reversing",,2120S,88_web.jpg
+97,"coal elevator, operating",,4110WS,97_web.jpg
+109,"trestle set, 12 piece",,2574,
+110,"trestle set, graduated",,2551W,
+112,"switches, pair",O,13150,
+114,engine house,HO,2555W,
+147,"controller, horn or whistle",,1645,
+164,lumber shed,,1421WS,164_web.jpg
+167,whistle controller,,463W,
+175,rocket launcher,,2545WS,
+202,"locomotive, diesel, A unit, UP Alco, powered",0-27,1569,202_web.jpg
+212,"locomotive, diesel, A unit, U.S.M.C Alco, powered",0-27,1591,212_web.jpg
+216,"locomotive, diesel, A unit, Burlington Alco, powered",0-27,1600,
+221,"locomotive, diesel, A unit, Denver & Rio Grande Alco, powered",0-27,1400,221_NYC_web.jpg
+222,"locomotive, diesel, A unit, Rio Grande Alco, powered",0-27,11011,222_web.jpg
+224,locomotive,O,463W,224_web.jpg
+225,"locomotive, diesel, A unit, C & O Alco, powered",0-27,1629,
+229,"locomotive, diesel, A unit, M & SL Alco, powered",0-27,1645,229_web.jpg
+230,"locomotive, diesel, A unit, C & O Alco, powered",0-27,1643,
+231,"locomotive, diesel, A unit, Rock Island Alco, powered",0-27,1810,
+232,"locomotive, diesel, A unit, New Haven Alco, powered",0-27,11232,
+233,"locomotive, 2-4-2",0-27,1646,
+236,"locomotive, 2-4-2",0-27,1652,
+237,"locomotive, 2-4-2",0-27,11351,
+238,"locomotive, 2-4-2",0-27,11375,
+239,"locomotive, 2-4-2",0-27,11540,
+242,"locomotive, 2-4-2",0-27,11201,242_web.jpg
+243,"locomotive, 2-4-2",0-27,1631WS,243_web.jpg
+244,"locomotive, 2-4-2",0-27,1627S,
+246,"locomotive, 2-4-2",0-27,1609,
+247,"locomotive, 2-4-2, blue-striped",0-27,1613S,
+249,"locomotive, red-striped, 2-4-2",0-27,1590,
+250,"locomotive, 2-4-2",,1573,
+260,"bumper, illuminated",,2553W,
+264,"forklift loader, operating",,2297WS,264_web.jpg
+342,culvert loader,,2273W,342_web.jpg
+345,culvert unloader,,2297WS,345_web.jpg
+362,barrel loader,,,362_web.jpg
+364,"lumber loader, conveyor",,,364_web.jpg
+400,"locomotive, diesel Budd RDC car, passenger car",O,2502W,400_web.jpg
+404,"locomotive, diesel Budd RDC car, mail-baggage ",O,2276W,404_web.jpg
+448,"range set, millile firing, with 6448 exploding boxcar",,2574,
+456,coal ramp,,,456_web.jpg
+464,saw mill,,2539WS,464_web.jpg
+470,missile launching platform with 6470 exploding boxcar,,13058,
+520,"locomotive, GE box cab",,1542,520_web.jpg
+600,"locomotive, diesel switcher, MKT NW-2",0-27,1525,600_web.jpg
+601,"locomotive, diesel switcher, Seaboard NW-2",O,2255W,601_web.jpg
+602,"locomotive, diesel switcher, Seaboard NW-2",0-27,1585W,
+610,"locomotive, diesel switcher, Erie NW-2 ",0-27,1001,610_web.jpg
+611,"locomotive, diesel switcher, Jersey Central NW-2",0-27,1581,
+613,"locomotive, diesel, switcher, Union Pacific NW-2",0-27,1593,
+614,"locomotive, diesel, switcher, Alaskan NW-2",0-27,1611,614_web.jpg
+616,"locomotive, diesel, switcher, Santa Fe NW-2",O,2570,616_web.jpg
+617,"locomotive, diesel, switcher, Santa Fe NW-2",O,13108,617_web.jpg
+621,"locomotive, diesel NW-2 switcher, Jersey Central",0-27,1551W,621_web.jpg
+622,"locomotive, diesel switcher SF bell ringing",O,2149B,622_web.jpg
+623,"locomotive, diesel switcher SF",O,,623_web.jpg
+625,"locomotive, diesel, center cab, Lehigh Valley",0-27,1571,625_web.jpg
+627,"locomotive, diesel, center cab, Lehigh Valley",0-27,1543,627_web.jpg
+628,"locomotive, diesel, center cab, Northern Pacific",0-27,1545,628_web.jpg
+629,"locomotive, diesel, center cab, Burlington",0-27,1552,629_web.jpg
+633,"locomotive, diesel, switcher, Santa Fe NW-2",0-27,11212,
+634,"locomotive, diesel, switcher, Santa Fe NW-2",0-27,11341,634_web.jpg
+637,"locomotive, 2-6-4",O,2531WS,637_web.jpg
+645,"locomotive, diesel, switcher, Union Pacific NW-2",0-27,11730,
+646,"locomotive, 4-6-4",O,2221WS,646_web.jpg
+665,"locomotive, 4-6-4, w/ feedwater heater",O,2237WS,665_web.jpg
+671,"locomotive, turbine 6-8-6",O,2105WS,
+675,"locomotive, 2-6-2 (1949), or 2-6-4 (1952)",O,2120S,675_web.jpg
+681,"locomotive, turbine, 6-8-6",O,2150WS,681_web.jpg
+682,"locomotive, turbine, 6-8-6, lubricator linkage",O,2217WS,682_web.jpg
+685,"locomotive, 4-6-4",O,2201WS,685_web.jpg
+726,"locomotive, Berkshire, 2-8-4",O,2113WS,726_dual_web.jpg
+736,"locomotive, Berkshire, 2-8-4",O,2163WS,736_web.jpg
+746,"locomotive, 4-8-4, N & W",O,2295WS,746_web.jpg
+773,"locomotive, 4-6-4",O,2148WS,773_50_web.jpg
+943,"ammo dump, exploding",,2527,
+1001,"locomotive, scout, 2-4-2",0-27,1111,
+1002,"gondola, black",,1111,
+1004,"box car, Baby Ruth, orange",,1112,
+1005,"tank car, Sunoco",,1111,
+1007,"caboose, red SP type",,1111,
+1008,"camtrol, uncoupling unit",0-27,1569,
+1009,"track, manual uncoupling",,1111,
+1010,"transformer, 35 watt",,1641,
+1011,"transformer, 25 watt",,1111,
+1012,"transformer, 35 watt",,1461S,
+1014,"transformer, 40 watt",,1001,
+1015,"transformer, 45 watt",,1542,
+1016,"transformer, 35 watt",,1609,
+1019,"track, uncoupling/operating",0-27,1400,
+1020,"crossing, 90 degree",0-27,,#N/A
+1025,"transformer, 45 watt",,1642,
+1026,"transformer, 25 watt",,1105,
+1032,"transformer, 75 watt",,1426WS,
+1033,"transformer, 90 watt",,1429WS,
+1034,"transformer, 75 watt",,1425B,
+1035,"transformer, 60 watt",,1431,
+1037,"transformer, 40 watt",,1400,
+1041,"transformer, 60 watt",,1400W,
+1042,"transformer, 75 watt",,1431W,
+1043,"transformer, 50 watt",,1501S,
+1044,"transformer, 90 watt",,1589WS,
+1053,"transformer, 60 watt",,1562W,
+1055,"locomotive, diesel, A unit, Texas Special Alco, powered",0-27,1105,1055_web.jpg
+1060,"locomotive, 2-4-2",0-27,1109,
+1061,"locomotive, 0-4-0 in 1963-64 and 2-4-2 in 1969",0-27,11415,
+1062,"locomotive, 2-4-2",0-27,11311,
+1063,"transformer, 75 watt",,1648,
+1065,"locomotive, diesel, A unit, UP Alco, powered",0-27,1125,1065_web.jpg
+1073,"transformer, 60 watt",,1645,
+1110,"locomotive, scout, 2-4-2",0-27,1115,1110_web.jpg
+1120,"locomotive, scout, 2-4-2",0-27,1113,
+1121,"switches, pair",0-27,1415WS,
+1122,"switches, pair",0-27,11600,1122_web.jpg
+1130,"locomotive, 2-4-2",0-27,1500,
+1615,"locomotive, switcher, 0-4-0 ",0-27,1527,1615_web.jpg
+1625,"locomotive, switcher, 0-4-0 ",0-27,1595,1625_web.jpg
+1654,"locomotive, 2-4-2",O,1401,1654_web.jpg
+1655,"locomotive, 2-4-2",0-27,1423W,1655_web.jpg
+1656,"locomotive, switcher, 0-6-0",,1425B,1656_web.jpg
+1665,"locomotive, switcher",,1407B,1665_web.jpg
+1666,"locomotive, 2-6-2",O,1402,1666_web.jpg
+1862,"locomotive, 4-4-0, general",0-27,1612,1862_web.jpg
+1865,passenger car,0-27,1612,
+1866,mail-baggage car,0-27,1612,
+1872,"locomotive, 4-4-0, general",O,2528WS,1872_web.jpg
+1876,"mail-baggage car, illuminated",O,2528WS,
+1877,flatcar with horses,O,1800,
+2016,"locomotive, 2-6-4",0-27,1000W,2016_web.jpg
+2018,"locomotive, 2-6-4, headlight and smoke",0-27,1547S,2018_web.jpg
+2020,"locomotive, turbine, 6-8-6",0-27,1413WS,2020_web.jpg
+2023,"locomotive, Alco UP Silver and Grey, or Yellow and Grey",0-27,,2023_web.jpg
+2024,"locomotive, A unit, C & O Alco, powered",0-27,11720,2024_web.jpg
+2025,"locomotive, 2-6-4",0-27,1434WS,2025_web.jpg
+2026,"locomotive, 2-6-2",0-27,1426WS,2026_web_early.jpg
+2028,"locomotive, diesel, GP-7, Pennsylvania",0-27,1529,2028_web.jpg
+2029,"locomotive, 2-6-4",0-27,11500,2029_web.jpg
+2031,"locomotive, Alco Rock Island",0-27,,2031_web.jpg
+2032,"locomotive, Alco Erie",0-27,,2032_web.jpg
+2033,"locomotive, Alco UP Silver",0-27,,2033_web.jpg
+2034,"locomotive, 2-4-2",0-27,1465,2034_web.jpg
+2035,"locomotive, 2-6-4",0-27,1469WS,2035_web.jpg
+2036,"locomotive, 2-6-4",0-27,1463W,2036_web.jpg
+2037,"locomotive, 2-6-4",0-27,1511S,2037_web.jpg
+2046,"locomotive, 4-6-4",0-27,1473WS,2046_web.jpg
+2055,"locomotive, 4-6-4",0-27,1502WS,2055_web.jpg
+2065,"locomotive, 4-6-4 w/ feedwater heater",0-27,1515WS,2065_web.jpg
+2321,"locomotive, FM, Lackawanna, two motors",O,2219W,2321_web.jpg
+2322,"locomotive, FM, Virginian, two motors",O,12820,2322_web.jpg
+2328,"locomotive, diesel, GP-7, Burlington",0-27,1562W,2328_web.jpg
+2329,"locomotive, electric rectifier, Virginia ",O,2505W,2329_web.jpg
+2330,"locomotive, GG1, two motor, green",O,2159W,2330_web.jpg
+2331,"locomotive, FM, Virginian, two motors",O,2251W,2331_web.jpg
+2332,"locomotive, GG1, single motor",O,2124W,2332_web.jpg
+2337,"locomotive, diesel, GP-7, Wabash",0-27,1601W,2337_web.jpg
+2338,"locomotive, diesel, GP-7, Milwaukee Road",O,2235W,2338_web.jpg
+2339,"locomotive, diesel, GP-7, Wabash",O,2275W,2339_web.jpg
+2340,"locomotive, GG1, Pennsylvania, tuscan, two motors",O,2254W,2340_web.jpg
+2341,"locomotive, FM, Jersey Central, two motors",O,2270W,2341_web.jpg
+2346,"locomotive, diesel, GP-9, Boston and Maine",O,12800,2346_web.jpg
+2348,"locomotive, diesel, GP-9, M & SL",O,2501W,2348_web.jpg
+2349,"locomotive, diesel, GP-9, Northern Pacific",0-27,1623W,2349_web.jpg
+2350,"locomotive, EP-5, electric, New Haven",O,2259W,2350_web.jpg
+2351,"locomotive, EP-5, electric, Milwaukee Road",O,2287W,2351_web.jpg
+2352,"locomotive, EP-5, electric, Pennsylvania",O,2511W,2352_web.jpg
+2357,"caboose, illuminated, SP type",,2133W,
+2358,"locomotive, EP-5, electric, Great Northern",O,2533W,2358_web.jpg
+2359,"locomotive, diesel, GP-9, Boston and Maine",O,2572,2359_web.jpg
+2360,"locomotive, GG1, Pennsylvania, tuscan, two motors",O,2274W,2360_web.jpg
+2365,"locomotive, diesel, GP-7, Chesapeake & Ohio",0-27,11268,2365_web.jpg
+2400,"passenger car, pullman, Maplewood, green",,1430WS,
+2401,"passenger car, observation, Hillside, green",,1430WS,
+2402,"passenger car, pullman, Chatham, green",,1430WS,
+2404,"passenger car, vista dome, Santa Fe, silver with blue letters",0-27,11490,
+2405,"passenger car, pullman, Santa Fe, silver with blue letters",0-27,11490,
+2406,"passenger car, observation, Santa Fe, silver with blue letters",0-27,11490,
+2408,"passenger car, vista dome, Santa Fe, silver with blue letters",0-27,11590,
+2409,"passenger car, pullman, Santa Fe, silver with blue letters",0-27,11590,
+2410,"passenger car, observation, Santa Fe, silver with blue letters",0-27,11590,
+2411,flatcar with pipes,,1403,
+2412,"passenger car, vista dome, Santa Fe, silver with blue stripes",0-27,1626W,
+2414,"passenger car, pullman, Santa Fe, silver with blue stripes",0-27,1651,
+2416,"passenger car, observation, Santa Fe, silver with blue stripes",0-27,1626W,
+2419,"caboose, work",,1407B,
+2420,"caboose, work with searchlight",,2111WS,2420_web.jpg
+2421,"passenger car, pullman, Maplewood, silver & grey, or silver & silver",0-27,2150WS,
+2422,"passenger car, pullman, Chatham, silver & grey, or silver & silver",0-27,2150WS,
+2423,"passenger car, observation, Hillside, silver & grey, or silver & silver",0-27,2150WS,
+2429,"passenger car, pullman, Livingston, silver& silver",0-27,1484WS,
+2430,"passenger car, pullman, blue",0-27,1400,
+2431,"passenger car, observation, blue",0-27,1400,
+2432,"passenger car, Vista Dome, Clifton, silver w/ red letters",0-27,1516WS,
+2434,"passenger car, pullman, Newark, silver w/ red letters",0-27,1516WS,
+2435,"passenger car, pullman, Elizabeth",0-27,1520W,
+2436,"passenger car, observation, Summit or Mooseheart, silver w/ red letters",0-27,1516WS,
+2440,"passenger car, pullman, illuminated",0-27,1402,
+2441,"passenger car, observation, illuminated",0-27,1402,
+2442,"passenger car, pullman, brown",0-27,2100,
+2443,"passenger car, observation, brown",0-27,2100,
+2452,gondola with barrels,,463W,
+2454,"boxcar, Baby Ruth",,1411W,
+2456,"hopper, Lehigh Valley, black",,2135WS,
+2457,"caboose, illuminated Pennsy N5",,463W,
+2458,automobile car,,463W,
+2460,"crane car, 12 wheel, black",,2111WS,2460_web.jpg
+2461,flatcar with transformer,,1441WS,
+2465,"tank car, Sunoco two dome",,1401,
+2472,"caboose, non-illuminated Pennsy N5",,1401,
+2481,"passenger car, pullman, Plainfield, yellow and gray",,1464W,
+2482,"passenger car, pullman, Westfield, yellow and gray",,1464W,
+2483,"passenger car, observation, Livingston, yellow and gray",,1464W,
+2521,"passenger car, observation, President McKinley",O,13078,
+2522,"passenger car, vista dome, President Harrison",O,13078,
+2523,"passenger car, pullman, President Garfield",O,13078,
+2530,"baggage car, Railway Express, large or small door",O,2222WS,
+2531,"passenger car, observation, Silver Dawn, aluminum",O,2190W,
+2532,"passenger car, Vista Dome, Silver Range, aluminum",O,2190W,
+2533,"passenger car, pullman, Silver Cloud, aluminum",O,2190W,
+2534,"passenger car, pullman, Silver Bluff, aluminum",O,2190W,
+2541,"passenger car, observation, Alexander Hamilton, aluminum",O,2254W,
+2542,"passenger car, vista dome, Betsy Ross, aluminum",O,2254W,
+2543,"passenger car, pullman, William Penn, aluminum",O,2254W,
+2544,"passenger car, pullman, Molly Pitcher, aluminum",O,2254W,
+2550,"mail-baggage car, Budd",O,2502W,
+2551,"passenger car, observation, Banff Park, aluminum",O,2296W,
+2552,"passenger car, Vista Dome, Skyline 500, aluminum",O,2296W,
+2553,"passenger car, pullman, Blair Manor, aluminum",O,2296W,
+2554,"passenger car, pullman, Craig Manor, aluminum",O,2296W,
+2555,"tank car, Sunoco single dome",,463W,
+2559,"passenger car, Budd",O,2276W,
+2560,crane,,1407B,
+2561,"passenger car, observation, Vista Valley, aluminum with red stripes",O,2544W,
+2562,"passenger car, vista dome, Regal Pass, aluminum with red stripes",O,2544W,
+2563,"passenger car, pullman, Indian Falls, aluminum with red stripes",O,2544W,
+2625,"passenger car, pullman Irvington, tuscan",O,2110WS,
+2627,"passenger car, pullman, Madison",O,2144W,
+2628,"passenger car, pullman, Manhattan",O,2144W,
+2855,"tank car, Sunoco single dome",,2113WS,
+2857,"caboose, illuminated  ",,2113WS,
+3309,"flatcar, turbo missile launcher",,11321,
+3330,flatcar with submarine kit,,2547WS,
+3349,"flatcar, depressed center, turbo missile launcher",,11212,
+3356,"horse car, operating",,1567W,3356_web.jpg
+3357,cop and hobo car,,11222,
+3359,"coal car, operating, twin-bin",,2241WS,
+3361,"log car, operating",,2247W,
+3362,"unloading car, helium tank",,1641,
+3364,"log car, operating",,11520,
+3366,"circus car, operating",,2555W,
+3370,sheriff and outlaw car,,1644,
+3376,giraffe car,,1642,
+3386,giraffe car,,1109,
+3409,flatcar with helicopter,,1124,
+3410,"flatcar with helicopter, manual release",,1645,
+3413,"capsule launcher, Mercury",,11288,
+3419,flatcar with helicopter,,2527,
+3424,"brakeman car, operating, Wabash",,1561WS,3424_web.jpg
+3428,"boxcar, operating, U.S. Mail",,1626W,
+3429,"flatcar, olive, with helicopter, U.S.M.C",,1805,
+3434,"sweeper car, chicken",,2535WS,
+3435,"aquarium car, operating",,1623W,3435_web.jpg
+3444,"gondola, operating, cop and hobo",,2275W,3444_web.jpg
+3451,"log car, operating",,1417WS,3451_web.jpg
+3454,"merchandise car, operating",,1409,3454_web.jpg
+3456,"hopper car, operating, used with 456 Coal Ramp set",,,#N/A
+3459,"coal car, operating",,1415WS,
+3461,"log car, operating",,1453WS,3461_web.jpg
+3462,"milk car, operating",0-27,1443WS,3462_web.jpg
+3464,"boxcar, operating",,1451WS,3464_web.jpg
+3469,"coal car, operating",,1459WS,3469_web.jpg
+3470,aerial target launcher,,11268,
+3472,"milk car, operating",,1455WS,3472_web.jpg
+3482,"milk car, operating",,1519WS,3482_web.jpg
+3484,"boxcar, operating Pennsy",,2205WS,3484_web.jpg
+3509,"flatcar, satellite launching, manual",,1643,
+3510,"flatcar, satellite launching, manual, red",,11011,
+3512,fireman and ladder car,,1623W,
+3519,"flatcar, satellite launching ",,1647,
+3520,searchlight car,,2189WS,3520_web.jpg
+3530,generator car,,2291W,
+3535,security car,,2549W,
+3540,"scanning car, radar",,2545WS,
+3545,"monitor car, TV",,2573,
+3559,"coal car, operating",,1409,3559_web.jpg
+3562,"barrel car, operating, black",,1521WS,
+3619,reconnaissance car with copter,,11268,
+3620,searchlight car,,1521WS,3620_web.jpg
+3650,"searchlight car, extension",,1565WS,3650_web.jpg
+3656,"cattle car, operating",,1459WS,3656_web.jpg
+3662,"milk car, operating",O,2243W,3662_web.jpg
+3665,"boxcar, Minuteman",,1647,
+3672,"milk car, operating, Bosco",O,2535WS,
+3820,"flatcar, olive, with submarine, U.S.M.C.",,1805,
+3830,flatcar with submarine,,2553W,
+3854,"merchandise car, operating",,2113WS,
+4357,"caboose, SP type, Electronic Set",,4110WS,
+4452,"gondola, Electronic Set",,4109WS,
+4454,"boxcar, Electronic Set",,4109WS,
+4457,"caboose, Electronic Set",,4109WS,
+5459,"coal car, operating, Electronic Set",,4109WS,
+6002,"gondola, black",,1461S,
+6004,"boxcar, orange Baby Ruth",,1461S,
+6007,"caboose, SP type",,1461S,
+6009,"track, uncoupling",,1500,
+6012,"gondola, black",,1477S,
+6014,"boxcar, Baby Ruth or Frisco, white or red",,1477S,
+6015,"tank car, Sunoco, single dome, yellow",,1513S,
+6017,"caboose, SP type",,1477S,
+6019,"track, uncoupling/operating",0-27,1423W,6019_web.jpg
+6024,"boxcar, Nabisco",,1581,
+6025,"tank car, Gulf, single dome, black or orange",,1545,
+6027,"caboose, SP type, Alaska",,1611,
+6029,"track, uncoupling",0-27,1000W,
+6032,"gondola, black",,1465,
+6035,"tank car, Sunoco single dome",,1465,
+6037,"caboose, SP type",,1465,
+6042,"gondola with canisters, blue",,1105,
+6043,"gondola with canisters, black",,,#N/A
+6044,"boxcar, Airex, blue",,1105,
+6045,"tank car, two dome, gray, Lionel Lines",,1105,
+6047,"caboose, SP type, red",,1105,
+6050,savings bank car,,1643,
+6057,"caboose, SP type, orange or unstamped brown",,1609,
+6058,"caboose, SP type, C & O",,1643,
+6059,"caboose, SP type, M & SL, red or brown",,1645,
+6062,"gondola with cable reels, black",,1621WS,
+6076,"hopper, Lehigh Valley, red or black",,1124,
+6110,"locomotive, scout, 2-4-2",0-27,1461S,
+6111,"flatcar with logs, yellow",,1525,
+6112,"gondola with canisters, black, white, or blue",,1543,
+6119,"caboose, work, red",,1527,
+6120,"caboose, unstamped work, yellow",,1125,
+6121,flatcar with pipes,,1543,
+6130,"caboose, work, Santa Fe",,2570,
+6139,"track, uncoupling",0-27,11331,
+6142,"gondola with two canisters, green, blue, or unstamped green",,11331,
+6149,"track, uncoupling",0-27,11430,
+6151,"flatcar, metal, with Range Patrol vehicle",,1590,
+6162,"gondola with three canisters, blue",,1641,
+6167,"caboose, SP type, unstamped, red or yellow",,11001,
+6175,flatcar with rocket,,2545WS,
+6176,"hopper, unstamped, yellow or black",,11430,
+6219,"caboose, work, C & O",,1629,
+6220,"locomotive, diesel switcher SF bell ringing",0-27,1457B,6220_web.jpg
+6250,"locomotive, switcher, Seaboard",0-27,1523,6250_web.jpg
+6257,"caboose, SP  type",,1423W,
+6262,flatcar with wheels,,1549,
+6264,flatcar with lumber,,2297WS,
+6311,"flatcar with pipes, brown",,1529,
+6315,"tank car, Gulf chemical",,2269W,
+6342,"gondola, culvert",,2273W,
+6343,barrel ramp car,,1646,
+6346,"hopper, covered, Alcoa",,1553W,
+6356,stock car,,1519WS,
+6357,"caboose, illuminated, SP type",,1429WS,
+6361,flatcar with timber,,1635WS,
+6362,flatcar with rail trucks,,2235W,
+6376,"stock car, circus",,2261WS,
+6402,"flatcar, general type with cable reels or boat, gray or maroon",,11001,
+6404,"flatcar, black with brown gray-bumpered auto",,1109,
+6405,flatcar with yellow van,,1642,
+6406,"flatcar, gray or maroon general style, with gray-bumpered auto",,1123,
+6407,flatcar with rocket,,11341,
+6408,"flatcar with pipes, red",,11351,
+6411,flatcar with logs,,1449WS,
+6413,"capsule carrier, Mercury",,11232,
+6414,auto loader,,2239W,
+6415,"tank car, Sunoco, three dome",,1505WS,
+6416,boat loader,,2573,
+6417,"caboose, Pennsy, porthole",,2203WS,
+6419,"caboose, work",,1447WS,
+6424,flatcar with autos,,1545,
+6425,"tank car, Gulf, three dome",,1551W,
+6427,"caboose, porthole, Lionel Lines",,1517W,
+6428,"boxcar, U.S. Mail",,12800,
+6429,"caboose, work, die-cast",,13118,
+6430,flatcar with vans,,1553W,
+6431,flatcar with vans and Midge Toy tractor,,12840,
+6434,poultry car,,2503WS,
+6436,"hopper, quad, Lehigh Valley",,1529,
+6437,"caboose, illuminated, Pennsylvania porthole",,2574,
+6440,"passenger car, pullman, green",,1426WS,
+6441,"passenger, car, observation, green",,1426WS,
+6442,"passenger car, pullman, brown",,,#N/A
+6443,"passenger car, observation, brown",,,#N/A
+6445,"bullion car, Ft Knox",,1649,
+6446,"hopper car, N&W covered",,1539W,
+6447,"caboose, Pennsylvania porthole, non-illuminated",,13098,
+6448,"boxcar, exploding",,1647,
+6452,gondola,,1423W,
+6454,boxcar,,1427WS,
+6456,"hopper, Lehigh Valley, black or maroon",,1425B,
+6457,"caboose, illuminated, SP type",,2147WS,
+6461,flatcar with transformer,,,#N/A
+6462,"gondola, black or green with barrels",,1451WS,
+6463,"tank car, rocket fuel",,11252,
+6465,"tank car, Sunoco, Lionel Lines, or Cities Service two dome, gray or orange",,1423W,
+6467,"bulkhead car, miscellaneous",,1563W,
+6468,"automobile car, B&O double door",,1507WS,
+6469,"bulkhead car, liquified gas",,11395,
+6470,"boxcar, exploding",,1625WS,
+6472,refrigerator car,,1475WS,
+6473,rodeo car,,11278,
+6475,"vat car, pickle",,1637W,
+6476,"hopper, Lehigh Valley, red, grey, yellow, or black",,1571,
+6477,"bulkhead car, miscellaneous, with plastic pipes",,2279W,
+6480,"boxcar, exploding",,1125,
+6482,refrigerator car,,1583WS,
+6500,"flatcar, black with red/white airplane",,13018,
+6501,flatcar with jet motorboat,,11268,
+6502,"flatcar with girder, black or blue",,11201,
+6511,"flatcar, with pipes, red",,1523,
+6512,cherry picker car,,11288,
+6517,"caboose, bay window",,2239W,
+6518,"flatcar, depressed center, double trucks, transformer",,2269W,
+6519,"condenser car, Allis Chalmers",,2505W,
+6520,searchlight car,,1457B,
+6530,fire prevention car,,1639WS,
+6536,"hopper, M & SL quad",,2503WS,
+6544,missile firing car,,1633,
+6555,"tank car, Sunoco, single dome",,2151W,
+6556,"stock car, Katy",,2513W,
+6557,"caboose, smoking",,2519W,
+6560,"crane, grey or red cab",,1527,
+6561,"flatcar, depressed center, w/ cable reels",,1517W,
+6572,"reefer, Railway Express Agency, dark green",,1600,
+6630,"flatcar with IRBM launcher, black",,1125,
+6636,"hopper, Alaska",,1625WS,
+6640,"flatcar, olive, with I.R.B.M. launcher",,1805,
+6646,"stock car, orange",,1583WS,
+6650,flatcar with IRBM launcher,,1625WS,
+6656,stock car,,1467W,
+6657,"caboose, illuminated, Rio Grande, SP type",,2291W,
+6660,flatcar with boom crane,,1593,
+6672,"reefer, SF",,2239W,
+6736,"hopper car, Detroit and Mackinac",,2551W,
+6800,"flatcar with airplane, Beechcraft, black and yellow",,1601W,
+6801,"flatcar with boat, cream deck and clear windshield",,1599,
+6802,flatcar with U.S. Steel bridge,,208P,
+6804,flatcar with U.S.M.C. trucks (microwave disc and two guns),,1595,
+6805,"flatcar, atomic disposal",,2505W,
+6806,flatcar with U.S.M.C. trucks (microwave disc and two guns),,1595,
+6807,flatcar with military DKW amphibious boat,,1591,
+6808,flatcar with U.S.M.C. mobile searchlight truck and two-gun tank,,1595,
+6809,flatcar with military trucks (cannon and hostipal van),,1591,
+6810,flatcar with white Cooper Jarrett van,,1601W,
+6812,"maintenance car, track",,1615,
+6814,"caboose, medical",,2527,
+6816,flatcar with dozer,,1617S,
+6817,flatcar with scraper,,2531WS,
+6818,flatcar with transformer,,1593,
+6819,flatcar with helicopter,,1613S,
+6820,flatcar with helicopter and missiles,,1633,
+6821,flatcar with crates,,1613S,
+6822,searchlight car,,2570,
+6823,flatcar with IRBM missiles,,2527,
+6824,"caboose, olive, medical",,1805,
+6825,flatcar with trestle,,1611,
+6826,flatcar with Christmas Trees,,1613S,
+6827,flatcar with Harnischfeger power shovel,,2551W,
+6828,flatcar with Harnischfeger crane,,2551W,
+6830,flatcar with submarine,,1633,
+6844,flatcar with missile,,2527,
+1001T,"tender, non-whistling, Scout tinplate",0-27,1111,
+1008-50,"track section, camtrol uncoupling",0-27,1609,
+1043-500,"transformer, 60 watt, white w/ white cord for Girl's set",,1587S,
+1050T,"tender, non-whistling, slope back",,1123,
+1060T,"tender, non-whistling, streamline",,1109,
+1061T,"tender, non-whistling, slope back, unstamped",,11311,
+1062T,"tender, non-whistling, slope back",,11520,
+110A,"trestle piers, 20 each, type A",,2555W,
+1130T,"tender, non-whistling",0-27,1577S,
+1130T-500,"tender, non-whistling, Lionel Lines, pink for Girl's set",,1587S,
+1615T,"tender, non-whistling, slope back",0-27,1527,
+1625T,"tender, non-whistling, slope back",,1595,
+1640-100,Presidential whistle stop kit,,1640W,
+1654T,"tender, non-whistling",,1401,
+1862T,"tender, non-whistling",,1612,
+1872T,"tender, non-whistling",,2528WS,
+1875W,"passenger car, illuminated, whistle",O,2528WS,1875W_web.jpg
+2020W,"tender, whistling ",,1415WS,2020W_web.jpg
+2023P,"locomotive, UP Alco, A unit, powered",,1464W,
+2023T,"locomotive, UP Alco, A unit, dummy",,1464W,
+2032P,"locomotive, Erie Alco, A unit, powered, black",,1467W,
+2032T,"locomotive, Erie Alco, A unit, dummy, black",,1467W,
+2033P,"locomotive, UP Alco, A unit, powered, silver and silver",,,#N/A
+2033T,"locomotive, UP Alco, A unit, dummy, silver and silver",,,#N/A
+2037-500,"locomotive, 2-6-4, headlight and smoke, pink for Girl's set",0-27,1587S,
+2041P,"locomotive, Rock Island Alco, A unit, powered",0-27,11740,
+2041T,"locomotive, Rock Island Alco, A unit, dummy",0-27,11740,
+2046T,"tender, non-whistling",,1526S,
+2046W,"tender, whistling, Lionel Lines",,1473WS,2046W_web.jpg
+204P,"locomotive, SF Alco, A unit, powered, blue and yellow",0-27,1586,
+204T,"locomotive, SF Alco, A unit, dummy, blue and yellow",,1586,
+205P,"locomotive, A unit, Alco powered, Missouri Pacific",0-27,1575,
+205T,"locomotive, A unit, Alco dummy, Missouri Pacific",0-27,1575,
+208P,"locomotive, A unit, Alco powered, Santa Fe",0-27,1605W,
+208T,"locomotive, A unit, Alco dummy, Santa Fe",0-27,1605W,
+209P,"locomotive, A unit, Alco powered, New Haven",0-27,1608W,
+209T,"locomotive, A unit, Alco dummy, New Haven",0-27,1608W,
+210P,"locomotive, A unit, Alco powered, Texas Special",0-27,1599,
+210T,"locomotive, A unit, Alco dummy, Texas Special",0-27,1599,
+211P,"locomotive, A unit, Alco powered, Texas Special",0-27,11252,
+211T,"locomotive, A unit, Alco dummy, Texas Special",0-27,11252,
+212P,"locomotive, A unit, Alco powered, Santa Fe",0-27,11490,
+212T,"locomotive, A unit, Alco dummy, Santa Fe",0-27,11490,
+213P,"locomotive, A unit, Alco powered, M & SL",0-27,11480,
+213T,"locomotive, A unit, Alco dummy, M & SL",0-27,11480,
+217C,"locomotive, B unit, Alco dummy, Boston and Maine",0-27,1615,
+217P,"locomotive, A unit, Alco powered, Boston and Maine",0-27,1615,
+218C,"locomotive, B unit, Alco dummy, Santa Fe",0-27,1649,
+218P,"locomotive, A unit, Alco powered, Santa Fe",0-27,1619W,
+218T,"locomotive, A unit, Alco dummy, Santa Fe",0-27,1619W,
+221T,"tender, non-whistling",,1400,
+223P,"locomotive, A unit, Alco powered, Santa Fe",0-27,11385,
+2240C,"locomotive, F3, B unit, dummy, Wabash",0-27,1563W,
+2240P,"locomotive, F3, A unit, powered, Wabash, single motor",0-27,1563W,
+2242C,"locomotive, F3, B unit, dummy, New Haven",O,2507W,
+2242P,"locomotive, F3, A unit, powered, New Haven, single motor",O,2507W,
+2243C,"locomotive, F3, B unit, dummy, SF",0-27,1535W,
+2243P,"locomotive, F3, A unit, powered, SF, single motor",0-27,1535W,
+2245C,"locomotive, F3, B unit, dummy, Texas Special",0-27,1517W,
+2245P,"locomotive, F3, A unit, powered, Texas Special, single motor",0-27,1517W,
+224C,"locomotive, B unit, Alco dummy, U.S. Navy",0-27,1633,
+224P,"locomotive, A unit, Alco powered, U.S. Navy",0-27,1633,
+229C,"locomotive, B unit, Alco dummy, M & SL",0-27,11288,
+229P,"locomotive, A unit, Alco powered, M & SL",0-27,11288,
+2333P,"locomotive, F3, pwr A unit, SF or NYC, two motors",O,2133W,
+2333T,"locomotive, F3 dummy A unit, SF or NYC",O,2133W,
+233T,"tender, non-whistling, Lionel Lines",,,#N/A
+233W,"tender, whistling, Lionel Lines",,1646,233W_web.jpg
+2340-25,"locomotive, GG1, Pennsylvania, green, two motors",O,2253W,
+2343C,"locomotive, F3 dummy B unit, SF",O,2191W,
+2343P,"locomotive, F3 power A unit, SF, two motors",O,2161W,
+2343T,"locomotive, F3 dummy A unit, SF ",O,2161W,
+2344C,"locomotive, F3, dummy B unit, NYC",O,2193W,
+2344P,"locomotive, F3, pwr A unit, NYC, two motors",O,2171W,
+2344T,"locomotive, F3, dummy A unit, NYC",O,2171W,
+234T,"tender, non-whistling, Lionel Lines",,11750,
+234W,"tender, whistling, Lionel Lines",,11375,234W_web.jpg
+2353C,"locomotive, F3, B unit, dummy, SF",O,2207W,
+2353P,"locomotive, F3, A unit, powered, SF, two motors",O,2190W-,
+2353T,"locomotive, F3, A unit, dummy, SF",O,2190W-,
+2354C,"locomotive, F3, B unit, dummy, NYC",O,2209W,
+2354P,"locomotive, F3, A unit, powered, NYC, two motors",O,2209W,
+2354T,"locomotive, F3, A unit, dummy, NYC",O,2209W,
+2356C,"locomotive, F3, B unit, dummy, Southern",O,2231W,
+2356P,"locomotive, F3, A unit, powered, Southern, two motors",O,2231W,
+2356T,"locomotive, F3, A unit, dummy, Southern",O,2231W,
+2360-25,"locomotive, GG1, Pennsylvania, green, two motors",O,2271W,
+2363C,"locomotive, F3, B unit, dummy, Illinois, Central",O,2239W,
+2363P,"locomotive, F3, A unit, powered, Illinois Central, two motors",O,2239W,
+2367C,"locomotive, F3, B unit, dummy, Wabash",O,2244W,
+2367P,"locomotive, F3, A unit, powered, Wabash, two motors",O,2244W,
+2368C,"locomotive, F3, B unit, dummy, B&O",O,2269W,
+2368P,"locomotive, F3, A unit, powered, B&O, two motors",O,2269W,
+2373P,"locomotive, F3, A unit, powered, Canadian Pacific, two motors",O,2296W,
+2373T,"locomotive, F3, A unit, dummy, Canadian Pacific",O,2296W,
+2378C,"locomotive, F3, B unit, dummy, Milwaukee Road",O,2273W,
+2378P,"locomotive, F3, A unit, powered, Milwaukee Road, two motors",O,2273W,
+2379C,"locomotive, F3, B unit, dummy, Rio Grande",O,2291W,
+2379P,"locomotive, F3, A unit, powered, Rio Grande, two motors",O,2291W,
+2383P,"locomotive, F3, A unit, powered, Santa Fe, two motors",O,2523W,
+2383T,"locomotive, F3, A unit, dummy, Santa Fe",O,2523W,
+2403B,"tender, slopback, bell ringing",,1407B,2403B.jpg
+2426W,"tender, whistling ",O,2113WS,2426W_web.jpg
+242T,"tender, non-whistling",,11540,
+243W,"tender, non-whistling",,1631WS,243W_web.jpg
+2442-,"passenger car, Vista Dome, Clifton, silver w/ red letters/stripes",0-27,,#N/A
+2444-,"passenger car, pullman, Newark, silver w/ red letters/stripes",0-27,,#N/A
+2446-,"passenger car, observation, Summit, silver w/ red letters/stripes",0-27,,#N/A
+244T,"tender, non-whistling, slope back",,1627S,
+2452X,gondola,,1401,
+2452X,gondola  ,,1401,
+2466T,"tender, non-whistling",,1402,
+2466W,"tender, whistling ",,463W,2466W_web.jpg
+2466WX,"tender, whistling ",,1411W,
+247T,"tender, non-whistling, B & O",,1613S,
+250T,"tender, non-whistling, Pennsylvania",,1573,
+250T,"tender, non-whistling, Pennsylvania, red-striped",,1573,
+2671W,"tender, whistling, streamline, Pennsy, 12 wheel",,2140WS,2671W_web.jpg
+2671WX,"tender, whistling, streamline, Lionel Lines, 12 wheel",,2163WS,
+3349-100,"flatcar, turbo missile launcher",,11385,
+3461-25,"log car, operating, green",,1519WS,
+3470-100,aerial target launcher,,11385,
+3494-1,"boxcar, operating, Pacemaker",,1541WS,
+3494-275,"boxcar, operating, State of Maine",,1559W,
+3562-25,"barrel car, operating, grey",,2217WS,
+3562-50,"barrel car, operating, yellow",,1533WS,
+3562-75,"barrel car, operating, orange",,2281W,
+3619-100,"reconnaissance, copter car",,11385,
+3830-75,flatcar with operating submarine,,11385,
+39-15,operating packet,,2521WS,
+39-20,operating packet,,2289WS,
+39-25,operating packet,,2527,
+39-35,operating packet,,2535WS,
+39-5,operating packet,,2292WS,
+4424W (1946),"tender, whistling, Electronic Set",,4109WS,
+4671W  ,"tender, whistling, Electronic Set",,,#N/A
+4671W (1947),"tender, whistling, Electronic Set",,4109WS,
+6001T,"tender, non-whistling",,1461S,
+6014-335,"savings bank car, Frisco, white",,11341,
+6014-410,"boxcar, Frisco, white",,11740,
+6014-85,"boxcar, Frisco, orange with blue lettering",,11730,
+6017-100,"caboose, SP type, Boston and Maine",,1615,
+6017-185,"caboose, SP type, Santa Fe, gray",,1619W,
+6017-200,"caboose, SP type, U.S. Navy",,1633,
+6017-235,"caboose, SP type, Santa Fe ",,13018,
+6017-50,"caboose, SP type, U.S.M.C.",,1591,
+6020W,"tender, whistling, Lionel Lines",,1447WS,6020W_web.jpg
+6026T,"tender, non-whistling, Lionel Lines",,1513S,
+6026W,"tender, whistling, Lionel Lines",,1503WS,6026W_web.jpg
+6042-250,"gondola, unstamped",,11420,
+6042-75,"gondola with cable reels, blue",,11201,
+6050-110,"bank car, Swift Savings, red",,11278,
+6066T,"tender, non-whistling, Lionel Lines",,1465,
+6076-100,"hopper, unstamped, gray",,11311,
+6076-75,"hopper, Lehigh Valley, black",,11321,
+6119-100,"caboose, work, red",,1575,
+6119-25,"caboose, work, orange",,1549,
+6119-75,"caboose, work, grey",,2277WS,
+6142-100,"gondola with two canisters, blue",,11460,
+6142-125,"gondola, blue",,11440,
+6142-150,"gondola with cable reels, blue or green",,11480,
+6142-75,"gondola with two canisters, green",,11450,
+6162-25,"gondola with canisters, blue",,1609,
+6162-60,"gondola with canisters, Alaskan",,1611,
+6167-100,"caboose, SP type, red",,11440,
+6167-125,"caboose, SP type, unstamped, red",,11430,
+6167-25,"caboose, SP type, unstamped",,11420,
+6167-50,"caboose, SP type, unstamped, yellow",,11321,
+6167-85,"caboose, SP type, Union Pacific",,11730,
+6176-50,"hopper, Lehigh Valley, black",,11440,
+6176-75,"hopper, Lehigh Valley, yellow",,11460,
+6257-100,"caboose, SP type, red with stack",,11361,
+6257X,"caboose, SP  type",,1425B,
+6357-50,"caboose, SP type, illuminated",,2555W,
+6402-50,"flatcar with cable reels, general type, gray",,11500,
+6409-25,"flatcar with pipes, red",,11311,
+6414-150,auto loader,,11375,
+6417-25,"caboose, porthole, Lionel Lines",,2221WS,
+6417-50,"caboose, Lehigh Valley, grey",,2223W,
+6419-100,"caboose, work, N & W",,2295WS,
+6419-25,"caboose, work",,1521WS,
+6419-50,"caboose, work",,2267W,
+6427-500,"caboose, Pennsylvania, blue for Girl's set",,1587S,
+6427-60,"caboose, Virginian, porthole",,2513W,
+6436-100,"hopper, Lehigh Valley, quad",,,#N/A
+6436-110,"hopper, Lehigh Valley, quad",,13138,
+6436-25,"hopper, Lehigh Valley, maroon, quad",,2235W,
+6436-500,"hopper, Lehigh Valley, lilac for Girl's set",,1587S,
+6440-,flatcar with vans,,,#N/A
+6446-25,"hopper, N & W, grey, covered",,2277WS,
+6446-60,"hopper, Lehigh Valley, covered",,13118,
+6456-25,"hopper car, Lehigh Valley, grey",,1515WS,
+6456-75,"hopper, Lehigh Valley, red enamel paint",,2227W,
+6460-25,"crane, red cab",,1523,
+6462-125,"gondola with barrels, red",,2223W,
+6462-25,"gondola with barrels, green",,1517W,
+6462-500,"gondola with canisters, pink for Girl's set",,1587S,
+6462-75,"gondola with barrels, red",,1519WS,
+6464-1,"box car, Western Pacific",,1505WS,
+6464-100,"boxcar, Western Pacific, blue or yellow feather",,2223W,
+6464-150,"boxcar, Missouri Pacific",,2247W,
+6464-175,"boxcar, Rock Island",,2217WS,
+6464-225,"boxcar, Southern Pacific",,1517W,
+6464-25,"boxcar, Great Northern",,2203WS,
+6464-275,"boxcar, State of Maine",,1537WS,
+6464-300,"boxcar, Rutland",,2243W,
+6464-375,"boxcar, Central of Georgia",,12840,
+6464-400,"boxcar, B&O",,1555WS,
+6464-425,"boxcar, New Haven",,1553W,
+6464-450,"boxcar, Great Northern",,1589WS,
+6464-475,"boxcar, Boston & Maine",,1577S,
+6464-50,"boxcar, M & St L",,2201WS,
+6464-500,"boxcar, Timken",,2287W,
+6464-510,"boxcar, Pacemaker, blue-green for Girl's set",,1587S,
+6464-515,"boxcar, Katy, yellow for Girl's set",,1587S,
+6464-525,"boxcar, M & St L",,1585W,
+6464-650,"boxcar, Rio Grande",,1581,
+6464-725,"boxcar, New Haven, orange",,13068,
+6464-75,"boxcar, Rock Island",,2211WS,
+6464-825,"boxcar, Alaska",,2539WS,
+6464-900,"boxcar, NYC",,2555W,
+6465-150,"tank car, two dome, orange, Lionel Lines",,11351,
+6466T,"tender, non-whistling",,1477S,
+6466W ,"tender, whistling, Lionel Lines",,,#N/A
+6466WX,"tender, whistling, Lionel Lines",,1426WS,
+6468-25,"automobile car, double door, New Haven",,2263W,
+6468X,"automobile car, B&O double door, tuscan",,,#N/A
+6476-75,"hopper, Lehigh Valley, black or red",,11375,
+6560-25,"crane, red cab",,2235W,
+6562-50,"gondola with canisters, black",,2283WS,
+6562-50,"gondola with canisters, black",,2283WS,
+6654W,"tender, whistling, tinplate Lionel Lines",0-27,1423W,6654W_web.jpg
+671R,"locomotive, turbine 6-8-6 Electronic Set",O,4109WS,
+671W,"tender, whistling",,2125WS,671W_web.jpg
+6822-50,searchlight car,,11375,
+736W,"tender, whistling, Pennsylvania",,2571,736W_web.jpg
+746W,"tender, whistling, N & W",O,2295WS,746W_web.jpg
+773W,"tender, whistling, NYC",,13150,773W_web.jpg
+ECU-1,Electronic Control Unit,,4109WS,
+HO set,matches components of super O set 2555W,0-27,2555W,
+LW,"transformer, 125 watt",,12710,
+RCS,"track, uncoupling/operating, 5 rail",O,463W,
+S,"transformer, 80 watts",,1434WS,
+T022,"track, switches, remote control, without constant voltage plug",O,12850,
+UCS,"track, uncoupling/operating, 5 rail w/ electromagnet",O,2147WS,
+unlettered,"caboose, SP type without end rails, red or yellow",,1123,
+ZW,"transformer, 275 watt",,13150,

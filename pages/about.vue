@@ -3,7 +3,7 @@
         <div class="hero-content flex-col lg:flex-row">
             <img src="@/assets/images/boy_aboutme.jpg" alt="Jim Weatherford Young" class="max-w-sm rounded-lg shadow-2xl">
             <div>
-                <h1 class="text-4xl font-bold">Jim <i>"Jimbo"</i> Weatherford</h1>
+                <h1 class="text-4xl font-bold">Jim <i>"Jimmy"</i> Weatherford</h1>
                 <p class="py-6">A Short Biography</p>
             </div>
         </div>
