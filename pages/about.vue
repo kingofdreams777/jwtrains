@@ -1,10 +1,11 @@
 <template>
-    <div class="hero min-h-screen bg-base-200">
+    <div id="aboutmehero" class="hero min-h-screen bg-base-200">
+        <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex-col lg:flex-row">
             <img src="@/assets/images/boy_aboutme.jpg" alt="Jim Weatherford Young" class="max-w-sm rounded-lg shadow-2xl">
             <div>
-                <h1 class="text-4xl font-bold">Jim <i>"Jimmy"</i> Weatherford</h1>
-                <p class="py-6">A Short Biography</p>
+                <h1 class="text-4xl font-bold text-white">Jim <i>"Jimmy"</i> Weatherford</h1>
+                <p class="py-6 text-white">A Short Biography</p>
             </div>
         </div>
     </div>
@@ -47,3 +48,13 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+#aboutmehero {
+    background-image: url('/assets/images/railwaytrackslandscape.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>

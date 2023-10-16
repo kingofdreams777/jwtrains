@@ -2,6 +2,18 @@
 </script>
 
 <template>
+    <div id="indexhero" class="hero min-h-screen">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content grid">
+            <img src="@/assets/images/indexbanner.jpg" alt="banner"
+                class="max-w-screen-lg rounded-lg border bg-black p-1 transition-shadow shadow-2xl">
+            <div>
+                <h1 class="text-5xl font-bold text-white">Welcome to JWTrains</h1>
+                <p class="text-white">Where you can learn to repair your Lionel Trains</p>
+            </div>
+        </div>
+
+    </div>
     <div class="flex flex-col place-items-center w-full">
         <div class="bg-accent prose">
             <h1>Do You want to repair your Lionel Post War trains?</h1>
@@ -64,3 +76,13 @@
         <p>This page was created by my awesome Grandson who is a fantastic Software Engineer.</p>
     </div>
 </template>
+
+<style scoped>
+#indexhero {
+    background-image: url('/assets/images/indexstockbackground.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
