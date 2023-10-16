@@ -124,6 +124,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @media (max-width: 640px) {
+        background-image: url('/assets/images/indexstockbackground.jpg') no-repeat center;
+    }
 }
 
 #indexthirdhero {
@@ -131,5 +135,9 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @media (max-width: 640px) {
+        background-image: url('/assets/images/landscapetrainhills.jpg') no-repeat center;
+    }
 }
 </style>
