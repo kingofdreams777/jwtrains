@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div id="indextophero" class="hero min-h-screen">
+    <div class="hero min-h-screen indexhero">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content grid">
             <div>
@@ -61,7 +61,7 @@
     <div id="indexthirdhero" class="hero min-h-screen">
         <div class="hero-overlay bg-opacity-50"></div>
         <div class="hero-content text-center">
-            <div class="max-w-md prose prose-h1:text-white prose-p:text-primary-focus">
+            <div class="max-w-md prose prose-h1:text-white prose-p:text-white">
                 <h1>What does JWTRAINS provide for free?</h1>
 
                 <p>You get a list of the tools I have found that allow me to complete <em>98%</em> of the typical repairs;
@@ -73,34 +73,53 @@
         </div>
     </div>
 
-    <h1>Here's a typical example of how the site works</h1>
+    <div class="hero min-h-screen bg-base-300">
+        <div class="hero-content flex-col lg:flex-row">
+            <div class="prose">
+                <h1>Here's a typical example of how the site works</h1>
 
-    <p>You have a locomotive <em>(say it's a number 54 Ballast Temper)</em> that no longer performs correctly and
-        you want to get it running again.</p>
-    <ul>
-        <li>Click on <em class="link">Locomotives</em></li>
-        <li>Find the 54 on the displayed list and click it</li>
-        <li>Review the image to ensure it's like yours</li>
-    </ul>
+                <p>You have a locomotive <em>(say it's a number 54 Ballast Temper)</em> that no longer performs correctly
+                    and
+                    you want to get it running again.</p>
+                <ul>
+                    <li>Click on <em class="link">Locomotives</em></li>
+                    <li>Find the 54 on the displayed list and click it</li>
+                    <li>Review the image to ensure it's like yours</li>
+                </ul>
 
-    <p>Once you decide you want the Article go to the <NuxtLink to="/articles" class="link">Articles</NuxtLink> link
-        for complete information</p>
+                <p>Once you decide you want the Article go to the <NuxtLink to="/articles" class="link link-hover">
+                        Articles</NuxtLink>
+                    link
+                    for complete information</p>
+            </div>
+        </div>
+    </div>
 
-    <h1>How to Read the Articles</h1>
-    <p>The articles are mailed to you on CD-ROMs. They are in an Electronic Book (E-Book) format that has the reader
-        embedded in the file. <em>(Click here to download a small sample to your PC.)</em> All you have to do to
-        open the file is to insert the CD into your CD-ROM drive and it will automatically run the file. MacIntosh
-        users must use their PC Emulator.</p>
+    <div class="hero min-h-screen indexhero">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content flex flex-row flex-shrink">
+            <div class="prose prose-h1:text-white prose-p:text-white">
+                <h1>How to Read the Articles</h1>
+                <p>The articles are mailed to you on CD-ROMs. They are in an Electronic Book (E-Book) format that has the
+                    reader
+                    embedded in the file. <em>(Click here to download a small sample to your PC.)</em> All you have to do to
+                    open the file is to insert the CD into your CD-ROM drive and it will automatically run the file.
+                    MacIntosh
+                    users must use their PC Emulator.</p>
 
-    <h1>You may find the <NuxtLink to="/bulb_list">Light Bulb Index</NuxtLink>
-    </h1>
-    <p>to contain useful information. I've listed the bulb type for all the Lionel PostWar locomotives, tenders,
-        operating cars, accessories and transformers. It's important to use the correct bulb to avoid damage to
-        plastic parts.</p>
+                <h1>You may find the <NuxtLink to="/bulb_list" class="btn btn-secondary">Light Bulb Index</NuxtLink>
+                </h1>
+
+                <p>to contain useful information. I've listed the bulb type for all the Lionel PostWar locomotives, tenders,
+                    operating cars, accessories and transformers. It's important to use the correct bulb to avoid damage to
+                    plastic parts.</p>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style scoped>
-#indextophero {
+.indexhero {
     background-image: url('/assets/images/indexstockbackground.jpg');
     background-size: cover;
     background-position: center center;
