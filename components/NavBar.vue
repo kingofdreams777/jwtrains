@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="navbar-center">
-            <a class="btn btn-ghost normal-case text-xl">JWTrains</a>
+            <NuxtLink to="/" class="btn btn-ghost normal-case text-xl">JWTrains</NuxtLink>
         </div>
         <div class="navbar-end">
             <SelectTheme />
