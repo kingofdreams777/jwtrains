@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="hero min-h-screen indexhero">
+    <div class="hero min-h-screen indexhero sm:shrink-0">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content grid">
             <div>
@@ -17,7 +17,7 @@
         <div class="hero-content flex-col lg:flex-row">
             <img src="@/assets/images/portraittrain1.jpg" alt="Portrait Train" class="max-w-sm rounded-lg shadow-2xl">
 
-            <div class="prose">
+            <div class="prose lg:prose-xl">
                 <h1>Do You want to Repair Your Lionel Post War Trains?</h1>
 
                 <p class="py-6">The articles purchased through this website will enable you to maintain your <i>0-27</i> and
@@ -95,7 +95,7 @@
         </div>
     </div>
 
-    <div class="hero min-h-screen indexhero">
+    <div class="hero min-h-screen indexhero sm:shrink-0">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex flex-row flex-shrink">
             <div class="prose prose-h1:text-white prose-p:text-white">
