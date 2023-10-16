@@ -6,7 +6,7 @@
     <div class="hero min-h-screen indexhero sm:shrink-0">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content grid">
-            <div>
+            <div class="prose sm:prose-xl">
                 <h1 class="text-5xl font-bold text-white">Welcome to JWTrains</h1>
                 <p class="text-white">Where you can learn to repair your Lionel Trains</p>
             </div>
