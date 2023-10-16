@@ -3,29 +3,50 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex-col lg:flex-row">
             <img src="@/assets/images/boy_aboutme.jpg" alt="Jim Weatherford Young" class="max-w-sm rounded-lg shadow-2xl">
-            <div>
-                <h1 class="text-4xl font-bold text-white">Jim <i>"Jimmy"</i> Weatherford</h1>
+            <div class="prose sm:prose-xl">
+                <h1 class="text-white">Jim <i>"Jimmy"</i> Weatherford</h1>
                 <p class="py-6 text-white">A Short Biography</p>
             </div>
         </div>
     </div>
-    <div class="flex flex-col place-items-center">
-        <div class="text-left prose">
-            <p>I received my first Lionel Train set for Christmas in 1953 when I was eight years old. <em>(I'llet let you
-                    figure out how old I am now!)</em> It was revered and played with for several years until higher
-                priority things held my interest; like school, cars, etc. Fortunately, my train was kept in the family and I
-                regained possession when I married.</p>
+    <div class="hero min-h-screen bg-base-300">
+        <div class="hero-content flex-col lg:flex-row prose">
+            <h1>I received my first Lionel Train set</h1>
+            <div class="prose lg:prose-xl sm:prose-2xl">
+                <p> for Christmas in 1953 when I was eight years old. <em>(I'll let you
+                        figure out how old I am now!)</em> It was revered and played with for several years until higher
+                    priority things held my interest; like school, cars, etc. Fortunately, my train was kept in the family
+                    and I
+                    regained possession when I married.</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero min-h-screen bg-base-content">
+        <div class="hero-content flex-col lg:flex-row prose">
+            <h1 class="text-white">1982 came along</h1>
+            <div class="prose lg:prose-xl sm:prose-2xl text-white">
+                <p> and we gave our son my train for his seventh birthday. I was interested in doing some
+                    minor
+                    repair on the locomotive and was introduced to some very knowledgeable people through the local train
+                    club
+                    here in San Diego <em>(The All Gauge Toy Train Association)</em> where I learned about model trains. I
+                    started buying used items that needed repair and found I enjoyed taking things apart to see how they
+                    worked
+                    <em>(undoubtedly a personality trait carried over from childhood. My father never did forgive me for
+                        disassembling his electric drill.)</em> I thought I should start documenting the repairs and that
+                    progressed to writing helpful repair hints for the club's newsletter. I became friends with the owner of
+                    the
+                    local hobby shop where I would buy old cabooses and used 0-27 track. I offered to be their repairman; it
+                    worked out well for all parties.
+                </p>
 
-            <p>1982 came along and we gave our son my train for his seventh birthday. I was interested in doing some minor
-                repair on the locomotive and was introduced to some very knowledgeable people through the local train club
-                here in San Diego <em>(The All Gauge Toy Train Association)</em> where I learned about model trains. I
-                started buying used items that needed repair and found I enjoyed taking things apart to see how they worked
-                <em>(undoubtedly a personality trait carried over from childhood. My father never did forgive me for
-                    disassembling his electric drill.)</em> I thought I should start documenting the repairs and that
-                progressed to writing helpful repair hints for the club's newsletter. I became friends with the owner of the
-                local hobby shop where I would buy old cabooses and used 0-27 track. I offered to be their repairman; it
-                worked out well for all parties.
-            </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="flex flex-col place-items-center">
+        <div class="text-left prose lg:prose-xl sm:prose-2xl">
+
 
             <p>Since I was a member of the Toy Train Operating Society, Southern Pacific Division, in Los Angeles, I began
                 writing repair hints for their newsletter, the Daylighter. Soon, I was writing longer and more detailed

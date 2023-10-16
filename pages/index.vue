@@ -17,7 +17,7 @@
         <div class="hero-content flex-col lg:flex-row">
             <img src="@/assets/images/portraittrain1.jpg" alt="Portrait Train" class="max-w-sm rounded-lg shadow-2xl">
 
-            <div class="prose lg:prose-xl">
+            <div class="prose sm:prose-xl">
                 <h1>Do You want to Repair Your Lionel Post War Trains?</h1>
 
                 <p class="py-6">The articles purchased through this website will enable you to maintain your <i>0-27</i> and
@@ -37,7 +37,7 @@
     <div class="hero min-h-screen bg-base-300">
         <div class="hero-content flex-col lg:flex-row-reverse">
             <img src="@/assets/images/portraittrain2.jpg" alt="Black Train Portrait" class="max-w-sm rounded-lg shadow-2xl">
-            <div class="prose">
+            <div class="prose sm:prose-xl">
                 <h1>Why should you buy my repair articles?</h1>
 
                 <p class="py-6">Each article has detailed instructions with accompanying close-up pictures of how to
@@ -61,7 +61,7 @@
     <div id="indexthirdhero" class="hero min-h-screen">
         <div class="hero-overlay bg-opacity-50"></div>
         <div class="hero-content text-center">
-            <div class="max-w-md prose prose-h1:text-white prose-p:text-white">
+            <div class="max-w-md prose prose-h1:text-white prose-p:text-white sm:prose-xl">
                 <h1>What does JWTRAINS provide for free?</h1>
 
                 <p>You get a list of the tools I have found that allow me to complete <em>98%</em> of the typical repairs;
@@ -75,7 +75,7 @@
 
     <div class="hero min-h-screen bg-base-300">
         <div class="hero-content flex-col lg:flex-row">
-            <div class="prose">
+            <div class="prose sm:prose-xl">
                 <h1>Here's a typical example of how the site works</h1>
 
                 <p>You have a locomotive <em>(say it's a number 54 Ballast Temper)</em> that no longer performs correctly
@@ -98,7 +98,7 @@
     <div class="hero min-h-screen indexhero sm:shrink-0">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex flex-row flex-shrink">
-            <div class="prose prose-h1:text-white prose-p:text-white">
+            <div class="prose prose-h1:text-white prose-p:text-white sm:prose-xl">
                 <h1>How to Read the Articles</h1>
                 <p>The articles are mailed to you on CD-ROMs. They are in an Electronic Book (E-Book) format that has the
                     reader
