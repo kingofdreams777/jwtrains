@@ -121,7 +121,6 @@
 <style scoped>
 .indexhero {
     background-image: url('/assets/images/indexstockbackground.jpg');
-    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -129,7 +128,6 @@
 
 #indexthirdhero {
     background-image: url('/assets/images/landscapetrainhills.jpg');
-    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
