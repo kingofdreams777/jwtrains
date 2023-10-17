@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -16,10 +15,8 @@
     <div class="hero min-h-screen bg-base-200">
         <div class="hero-content flex-col lg:flex-row">
             <img src="@/assets/images/portraittrain1.jpg" alt="Portrait Train" class="max-w-sm rounded-lg shadow-2xl">
-
             <div class="prose sm:prose-xl">
                 <h1>Do You want to Repair Your Lionel Post War Trains?</h1>
-
                 <p class="py-6">The articles purchased through this website will enable you to maintain your <i>0-27</i> and
                     O gauge model
                     trains. I am initially focusing on the period from 1946 through 1969, commonly known as the PostWar Era.
