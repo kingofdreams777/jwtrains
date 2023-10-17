@@ -14,12 +14,14 @@
 
     <div class="hero min-h-screen bg-base-200">
         <div class="hero-content flex-col lg:flex-row">
-            <img src="@/assets/images/portraittrain1.jpg" alt="Portrait Train" class="max-w-sm rounded-lg shadow-2xl">
+            <img src="/portraittrain1.jpg" alt="Portrait Train" class="max-w-sm rounded-lg shadow-2xl">
             <div class="prose sm:prose-xl">
                 <h1>Do You want to Repair Your Lionel Post War Trains?</h1>
-                <p class="py-6">The articles purchased through this website will enable you to maintain your <i>0-27</i> and
+                <p class="py-6">The articles purchased through this website will enable you to maintain your <i>0-27</i>
+                    and
                     O gauge model
-                    trains. I am initially focusing on the period from 1946 through 1969, commonly known as the PostWar Era.
+                    trains. I am initially focusing on the period from 1946 through 1969, commonly known as the PostWar
+                    Era.
                     There were hundreds of thousands of trains produced by Lionel during this era and there are numerous
                     third
                     parties currently making replacement parts. So, potentially thousands of pieces can be put back in
@@ -33,7 +35,7 @@
 
     <div class="hero min-h-screen bg-base-300">
         <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="@/assets/images/portraittrain2.jpg" alt="Black Train Portrait" class="max-w-sm rounded-lg shadow-2xl">
+            <img src="/portraittrain2.jpg" alt="Black Train Portrait" class="max-w-sm rounded-lg shadow-2xl">
             <div class="prose sm:prose-xl">
                 <h1>Why should you buy my repair articles?</h1>
 
@@ -117,24 +119,24 @@
 
 <style scoped>
 .indexhero {
-    background-image: url('/assets/images/indexstockbackground.jpg');
+    background-image: url('/indexstockbackground.jpg?url');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     @media (max-width: 640px) {
-        background-image: url('/assets/images/indexstockbackground.jpg') no-repeat center;
+        background-image: url('/indexstockbackground.jpg?url') no-repeat center;
     }
 }
 
 #indexthirdhero {
-    background-image: url('/assets/images/landscapetrainhills.jpg');
+    background-image: url('/landscapetrainhills.jpg?url');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     @media (max-width: 640px) {
-        background-image: url('/assets/images/landscapetrainhills.jpg') no-repeat center;
+        background-image: url('/landscapetrainhills.jpg?url') no-repeat center;
     }
 }
 </style>
