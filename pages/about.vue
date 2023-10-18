@@ -4,7 +4,7 @@
         <div class="hero-content flex-col lg:flex-row">
             <img src="/boy_aboutme.jpg" alt="Jim Weatherford Young" class="max-w-sm rounded-lg shadow-2xl">
             <div class="prose sm:prose-xl">
-                <h1 class="text-white">James <i>"Jimmy"</i> Weatherford</h1>
+                <h1 class="text-white">James Weatherford</h1>
                 <p class="py-6 text-white">A Short Biography</p>
             </div>
         </div>
