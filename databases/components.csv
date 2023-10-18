@@ -576,12 +576,10 @@ number,description,gauge,set,image
 2446-,"passenger car, observation, Summit, silver w/ red letters/stripes",0-27,,#N/A
 244T,"tender, non-whistling, slope back",,1627S,
 2452X,gondola,,1401,
-2452X,gondola  ,,1401,
 2466T,"tender, non-whistling",,1402,
 2466W,"tender, whistling ",,463W,2466W_web.jpg
 2466WX,"tender, whistling ",,1411W,
 247T,"tender, non-whistling, B & O",,1613S,
-250T,"tender, non-whistling, Pennsylvania",,1573,
 250T,"tender, non-whistling, Pennsylvania, red-striped",,1573,
 2671W,"tender, whistling, streamline, Pennsy, 12 wheel",,2140WS,2671W_web.jpg
 2671WX,"tender, whistling, streamline, Lionel Lines, 12 wheel",,2163WS,
@@ -695,7 +693,6 @@ number,description,gauge,set,image
 6468X,"automobile car, B&O double door, tuscan",,,#N/A
 6476-75,"hopper, Lehigh Valley, black or red",,11375,
 6560-25,"crane, red cab",,2235W,
-6562-50,"gondola with canisters, black",,2283WS,
 6562-50,"gondola with canisters, black",,2283WS,
 6654W,"tender, whistling, tinplate Lionel Lines",0-27,1423W,6654W_web.jpg
 671R,"locomotive, turbine 6-8-6 Electronic Set",O,4109WS,

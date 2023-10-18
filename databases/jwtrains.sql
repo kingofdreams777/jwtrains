@@ -1,7 +1,7 @@
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE IF NOT EXISTS "trainsets"(
-"number" VARCHAR PRIMARY KEY, "year" INTEGER, "gauge" VARCHAR, "price" DECIMAL,
+"number" VARCHAR, "year" INTEGER, "gauge" VARCHAR, "price" DECIMAL,
  "description" TEXT, "track" VARCHAR, "transformer" VARCHAR);
 INSERT INTO trainsets VALUES('463W','1945','O','33.50 ','Freight ','8 c, 3 s, RCS','None, 167');
 INSERT INTO trainsets VALUES('1400','1946','0-27','30.00 ','Passenger, no whistle','8 c, 3 s, 1019','1037');
