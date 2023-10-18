@@ -1,0 +1,12 @@
+- [ ] create database
+	- [ ] setup sqlite3 file
+	- [ ] import to turso db
+- [ ] create admin webpage
+	- [ ] create user and login account
+	- [ ] add ability to add data rows to all tables
+		- [ ] sets
+		- [ ] articles
+		- [ ] components
+	- [ ] add ability to upload images
+		- [ ] for components
+		- [ ] for articles

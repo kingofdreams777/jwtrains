@@ -434,8 +434,8 @@ number,year,gauge,price,description,track,transformer
 2171W,1950,O,67.5,"Freight, horn","8 c, 7 s, UCS",None
 2173WS,1950,O,52.5,"Freight, whistle, smoke, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None
 2173WS,1951,O,62.5,"Freight, whistle, smoke, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None
-2175W,"1950, 1951",O,"57.50 (1950), $70.00 (1951)","Freight, horn, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None
-,,,,,,
+2175W,1950,O,57.5,"Freight, horn, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None
+2175W,1951,O,70,"Freight, horn, 6465 vice 6555 in 1951","8 c, 7 s, UCS",None
 2177WS,1952,O,39.95,"Freight, whistle, smoke","8 c, 5 s, UCS",None
 2179WS,1952,O,47.75,"Freight, whistle, smoke","8 c, 5 s, UCS",None
 2183WS,1952,O,54.5,"Freight, whistle, smoke","8 c, 7 s, UCS",None
@@ -447,7 +447,8 @@ number,year,gauge,price,description,track,transformer
 2190W,1953,O,89.5,"Passenger, horn","8 c, 9 s, UCS",None
 2191W,1952,O,70,"Freight, horn","8 c, 7 s, UCS",None
 2193W,1952,O,70,"Freight, horn","8 c, 7 s, UCS",None
-2201WS,"1953, 1954",O,39.95,"Freight, whistle, smoke, 665 vice 685 in 1954","8 c, 5 s, UCS",None
+2201WS,1953,O,39.95,"Freight, whistle, smoke, 665 vice 685 in 1954","8 c, 5 s, UCS",None
+2201WS,1954,O,39.95,"Freight, whistle, smoke, 665 vice 685 in 1954","8 c, 5 s, UCS",None
 2203WS,1953,O,49.95,"Freight, whistle, smoke","8 c, 5 s, UCS",None
 2205WS,1953,O,59.75,"Freight, whistle, smoke","8 c, 7 s, UCS",None
 2207W,1953,O,70,"Freight, horn","8 c, 7 s, UCS",None
@@ -519,7 +520,9 @@ number,year,gauge,price,description,track,transformer
 2523W,1958,Super O,95,"Freight, horn","12 c, 3 s, 1 insulated, 39-20",None
 2525WS,1958,Super O,100,"Freight, whistle, smoke","12 c, 5 s, 1 insulated, 39-5",None
 2526W,1958,Super O,100,"Passenger, horn","12 c, 7 s, 1 insulated, 39-5",None
-2528WS,"1959, 1960, 1961",Super O,49.95,"Passenger, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None
+2528WS,1959,Super O,49.95,"Passenger, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None
+2528WS,1960,Super O,49.95,"Passenger, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None
+2528WS,1961,Super O,49.95,"Passenger, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None
 2529W,1959,Super O,59.95,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None
 2531WS,1959,Super O,59.95,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None
 2533W,1959,Super O,65,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None
@@ -528,15 +531,18 @@ number,year,gauge,price,description,track,transformer
 2539WS,1959,Super O,79.95,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-35",None
 2541W,1959,Super O,89.95,"Freight, horn","12 c, 3 s, 1 insulated, 39-25",None
 2543WS,1959,Super O,95,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None
-2544W,"1959, 1960",Super O,100,"Passenger, horn","12 c, 5 s, 1 insulated, 39-25",None
+2544W,1959,Super O,100,"Passenger, horn","12 c, 5 s, 1 insulated, 39-25",None
+2544W,1960,Super O,100,"Passenger, horn","12 c, 5 s, 1 insulated, 39-25",None
 2545WS,1959,Super O,100,"Freight, whistle, smoke","12 c, 3 s, 1 insulated, 39-25",None
 2547WS,1960,Super O,49.95,"Freight, whistle, smoke","12 c, 1 s, 1 insulated, 39-25",None
 2549W,1960,Super O,59.95,"Freight, horn","18 c, 2 s, 5 half s, 1 insulated, 39-25",None
 2551W,1960,Super O,75,"Freight, horn","24 c, 13 s, 1 insulated, 39-25",None
 2553W,1960,Super O,100,"Freight, whistle, smoke","18 c, 7 s, 2 half c, 6 half s, 1 insulated, 90 Xing, LH sw, 39-35",None
 2555W,1960,Super O,150,"Freight, horn, & complementing HO pieces","12 c, 3 s, 1 insulated, 39-25",1044
-4109WS,"1946, 1947",O,75,"Electronic freight, whistle, smoke","8 c, 4 s","None, ECU-1"
-4110WS,"1948, 1949",O,199.95,"Electronic freight, whistle, smoke","10 c, 18 s, 2 half s, pr O-22 switches","VW, ECU-1"
+4109WS,1946,O,75,"Electronic freight, whistle, smoke","8 c, 4 s","None, ECU-1"
+4109WS,1947,O,75,"Electronic freight, whistle, smoke","8 c, 4 s","None, ECU-1"
+4110WS,1948,O,199.95,"Electronic freight, whistle, smoke","10 c, 18 s, 2 half s, pr O-22 switches","VW, ECU-1"
+4110WS,1949,O,199.95,"Electronic freight, whistle, smoke","10 c, 18 s, 2 half s, pr O-22 switches","VW, ECU-1"
 463W,1945,O,33.5,Freight ,"8 c, 3 s, RCS","None, 167"
 A-20,1955,O,39.95,"Freight, horn","8 c, 5 s, UCS",None
 A-21,1955,O,49.95,"Freight, whistle, smoke","8 c, 5 s, UCS",None
