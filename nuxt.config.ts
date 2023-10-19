@@ -13,4 +13,8 @@ export default defineNuxtConfig({
             title: 'JWTrains'
         }
     },
+    runtimeConfig: {
+        dbUrl: '',
+        dbAuthToken: ''
+    }
 })
