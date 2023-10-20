@@ -2,19 +2,21 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     css: ['~/assets/css/main.css'],
+
     postcss: {
         plugins: {
             tailwindcss: {},
             autoprefixer: {},
         },
     },
+
     app: {
         head: {
             title: 'JWTrains'
         }
     },
-    runtimeConfig: {
-        dbUrl: '',
-        dbAuthToken: ''
-    }
+
+    modules: [
+        "@nuxt/content"
+    ],
 })

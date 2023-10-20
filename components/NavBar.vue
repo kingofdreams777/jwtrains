@@ -19,6 +19,9 @@
                         <NuxtLink to="/articles" class="text-lg link">Order Articles</NuxtLink>
                     </li>
                     <li>
+                        <NuxtLink to="/tools_and_materials" class="text-lg link">Tools & Materials</NuxtLink>
+                    </li>
+                    <li>
                         <NuxtLink to="/technical_tips" class="text-lg link">Technical Tips</NuxtLink>
                     </li>
                     <li>

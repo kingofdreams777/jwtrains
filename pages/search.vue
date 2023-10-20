@@ -2,5 +2,6 @@
 </script>
 <template>
     <div>
+        <ComingSoon />
     </div>
 </template>
