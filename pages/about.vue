@@ -1,8 +1,19 @@
+<script setup>
+import { computed } from 'vue';
+
+const img = useImage();
+
+const backgroundStyles = computed(() => {
+    const imgUrl = img('/railwaytrackslandscape.jpg');
+    return { backgroundImage: `url('${imgUrl}')` };
+});
+
+</script>
 <template>
-    <div id="aboutmehero" class="hero min-h-screen bg-base-200">
+    <div class="hero min-h-screen" v-bind:style="backgroundStyles">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex-col lg:flex-row">
-            <img src="/boy_aboutme.jpg" alt="Jim Weatherford Young" class="max-w-sm rounded-lg shadow-2xl">
+            <img src="/boy_aboutme.jpg" alt="James Weatherfor Young" class="max-w-sm rounded-lg shadow-2xl">
             <div class="prose sm:prose-xl">
                 <h1 class="text-white">James Weatherford</h1>
                 <p class="py-6 text-white">A Short Biography</p>
@@ -12,7 +23,7 @@
 
     <div class="hero min-h-screen bg-base-300">
         <div class="hero-content flex-col lg:flex-row">
-            <img src="/trainwithsteamportrait.jpg" alt="Steam Train" class="max-w-sm rounded-lg shadow-2xl">
+            <NuxtImg src="/trainwithsteamportrait.jpg" alt="Steam Train" class="max-w-sm rounded-lg shadow-2xl" />
             <div class="prose sm:prose-xl">
                 <h1>I received my first Lionel Train set</h1>
                 <p> for Christmas in 1953 when I was eight years old. <em>(I'll let you
@@ -83,12 +94,4 @@
     </div>
 </template>
 
-<style scoped>
-#aboutmehero {
-    background-image: url('/railwaytrackslandscape.jpg?url');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-</style>
+<style scoped></style>

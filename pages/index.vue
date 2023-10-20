@@ -1,8 +1,22 @@
 <script setup>
+import { computed } from 'vue';
+
+const img = useImage();
+
+const indexHero = computed(() => {
+    const imgUrl = img('/indexstockbackground.jpg');
+    return { backgroundImage: `url('${imgUrl}')` };
+});
+
+const indexThirdHero = computed(() => {
+    const imgUrl = img('/landscapetrainhills.jpg');
+    return { backgroundImage: `url('${imgUrl}')` };
+});
+
 </script>
 
 <template>
-    <div class="hero min-h-screen indexhero sm:shrink-0">
+    <div class="hero min-h-screen" :style="indexHero">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content grid">
             <div class="prose sm:prose-xl">
@@ -14,7 +28,7 @@
 
     <div class="hero min-h-screen bg-base-200">
         <div class="hero-content flex-col lg:flex-row">
-            <img src="/portraittrain1.jpg" alt="Portrait Train" class="max-w-sm rounded-lg shadow-2xl">
+            <NuxtImg src="/portraittrain1.jpg" alt="Portrait Train" class="max-w-sm rounded-lg shadow-2xl" />
             <div class="prose sm:prose-xl">
                 <h1>Do You want to Repair Your Lionel Post War Trains?</h1>
                 <p class="py-6">The articles purchased through this website will enable you to maintain your <i>0-27</i>
@@ -35,7 +49,7 @@
 
     <div class="hero min-h-screen bg-base-300">
         <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="/portraittrain2.jpg" alt="Black Train Portrait" class="max-w-sm rounded-lg shadow-2xl">
+            <NuxtImg src="/portraittrain2.jpg" alt="Black Train Portrait" class="max-w-sm rounded-lg shadow-2xl" />
             <div class="prose sm:prose-xl">
                 <h1>Why should you buy my repair articles?</h1>
 
@@ -57,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div id="indexthirdhero" class="hero min-h-screen">
+    <div class="hero min-h-screen" :style="indexThirdHero">
         <div class="hero-overlay bg-opacity-50"></div>
         <div class="hero-content text-center">
             <div class="max-w-md prose prose-h1:text-white prose-p:text-white sm:prose-xl">
@@ -94,7 +108,7 @@
         </div>
     </div>
 
-    <div class="hero min-h-screen indexhero sm:shrink-0">
+    <div class="hero min-h-screen" :style="indexHero">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex flex-row flex-shrink">
             <div class="prose prose-h1:text-white prose-p:text-white sm:prose-xl">
@@ -116,27 +130,3 @@
         </div>
     </div>
 </template>
-
-<style scoped>
-.indexhero {
-    background-image: url('/indexstockbackground.jpg?url');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    @media (max-width: 640px) {
-        background-image: url('/indexstockbackground.jpg?url') no-repeat center;
-    }
-}
-
-#indexthirdhero {
-    background-image: url('/landscapetrainhills.jpg?url');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    @media (max-width: 640px) {
-        background-image: url('/landscapetrainhills.jpg?url') no-repeat center;
-    }
-}
-</style>
