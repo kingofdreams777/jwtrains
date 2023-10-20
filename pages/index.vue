@@ -5,7 +5,9 @@ const img = useImage();
 
 const indexHero = computed(() => {
     const imgUrl = img('/indexstockbackground.jpg');
-    return { backgroundImage: `url('${imgUrl}')` };
+    return {
+        backgroundImage: `url('${imgUrl}')`,
+    };
 });
 
 const indexThirdHero = computed(() => {
@@ -16,7 +18,7 @@ const indexThirdHero = computed(() => {
 </script>
 
 <template>
-    <div class="hero min-h-screen" :style="indexHero">
+    <div class="hero min-h-screen indexhero" :style="indexHero">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content grid">
             <div class="prose sm:prose-xl">
@@ -71,7 +73,7 @@ const indexThirdHero = computed(() => {
             </div>
         </div>
     </div>
-    <div class="hero min-h-screen" :style="indexThirdHero">
+    <div class="hero min-h-screen indexthirdhero" :style="indexThirdHero">
         <div class="hero-overlay bg-opacity-50"></div>
         <div class="hero-content text-center">
             <div class="max-w-md prose prose-h1:text-white prose-p:text-white sm:prose-xl">
@@ -108,7 +110,7 @@ const indexThirdHero = computed(() => {
         </div>
     </div>
 
-    <div class="hero min-h-screen" :style="indexHero">
+    <div class="hero min-h-screen indexhero" :style="indexHero">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex flex-row flex-shrink">
             <div class="prose prose-h1:text-white prose-p:text-white sm:prose-xl">
@@ -130,3 +132,19 @@ const indexThirdHero = computed(() => {
         </div>
     </div>
 </template>
+
+<style scoped>
+.indexhero {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.indexthirdhero {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>

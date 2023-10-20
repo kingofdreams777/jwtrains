@@ -10,7 +10,7 @@ const backgroundStyles = computed(() => {
 
 </script>
 <template>
-    <div class="hero min-h-screen" v-bind:style="backgroundStyles">
+    <div class="hero min-h-screen abouthero" v-bind:style="backgroundStyles">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex-col lg:flex-row">
             <img src="/boy_aboutme.jpg" alt="James Weatherfor Young" class="max-w-sm rounded-lg shadow-2xl">
@@ -94,4 +94,11 @@ const backgroundStyles = computed(() => {
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.abouthero {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
