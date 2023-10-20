@@ -17,7 +17,10 @@ export default defineNuxtConfig({
     },
 
     modules: [
-        "@nuxt/content",
         "@nuxt/image"
     ],
+
+    runtimeConfig: {
+        dbUrl: '~/databases/jwtrains.db'
+    }
 })
