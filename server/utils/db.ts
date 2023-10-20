@@ -1,20 +1,8 @@
-import { drizzle, BunSQLiteDatabase } from 'drizzle-orm/bun-sqlite';
-import { Database } from 'bun:sqlite';
-import {
-    traincomponents,
-    trainsets,
-    trainarticles,
-    TrainSet,
-    TrainArticle,
-    TrainComponent
-} from '~/drizzle/schema';
+import { drizzle, BetterSQLite3Database } from 'drizzle-orm/better-sqlite3';
+import Database from 'better-sqlite3';
 
-const config = useRuntimeConfig();
-
-const sqlite = new Database(config.dbUrl);
-
-const db: BunSQLiteDatabase = drizzle(sqlite);
-
-const result = await db.select().from(traincomponents);
-
-console.log(result);
+export function useDb(): BetterSQLite3Database {
+    const sqlite = new Database("./jwtrains.db");
+    const db = drizzle(sqlite);
+    return db;
+}

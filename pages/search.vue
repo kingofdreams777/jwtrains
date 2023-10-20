@@ -3,5 +3,6 @@
 <template>
     <div>
         <ComingSoon />
+        <SearchEngine />
     </div>
 </template>

@@ -21,6 +21,6 @@ export default defineNuxtConfig({
     ],
 
     runtimeConfig: {
-        dbUrl: '~/databases/jwtrains.db'
+        dbUrl: '~/server/data/jwtrains.db'
     }
 })

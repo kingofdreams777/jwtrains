@@ -1,28 +1,17 @@
 <script setup lang="ts">
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
+import { useAsyncData } from 'nuxt/app';
 
-interface TrainComponent extends ParsedContent {
-    number: string;
-    description: string;
-    gauge: string;
-    set: string;
-    image: string;
-}
+const data = await useAsyncData('/api/trainsets', () => {
+    return $fetch('/api/trainsets');
+});
 
-//const data = await queryContent('/json/components').where({body: {}}).findOne();
+console.log(data);
 
 </script>
 
 <template>
     <div>
+        <p>{{ data }}</p>
     </div>
 </template>
 
-<script lang="ts">
-const searchOptions = [
-    "Search Sets/Components by Number",
-    "Search Sets by Year",
-    "Search Components by Description"
-]
-
-</script>
