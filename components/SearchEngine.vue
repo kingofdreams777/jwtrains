@@ -1,20 +1,12 @@
 <script setup lang="ts">
 import { useAsyncData } from 'nuxt/app';
-import type { TrainSet } from '~/drizzle/schema';
 import type { TrainSetRequest, TrainComponentRequest } from '~/models/trainrequests';
-import { vModelSelect } from 'vue';
 import { computed, ref } from 'vue';
 
 type SearchOption = {
     id: number;
     description: string;
 };
-
-const searchOptions: SearchOption[] = [
-    { id: 1, description: "Search Sets/Components Number" },
-    { id: 2, description: "Search Sets by Year" },
-    { id: 3, description: "Search Components by Description" }
-]
 
 const searchOption: Ref<number> = ref(0);
 const searchYear: Ref<number> = ref(0);
@@ -86,7 +78,3 @@ async function search() {
         </div>
     </div>
 </template>
-
-<script lang="ts">
-</script>
-

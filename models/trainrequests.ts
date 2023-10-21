@@ -12,5 +12,5 @@ export type TrainSetRequest = {
 };
 
 export type TrainArticleRequest = {
-    component: string
+    component: string[]
 };
