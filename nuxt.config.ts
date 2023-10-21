@@ -21,6 +21,9 @@ export default defineNuxtConfig({
     ],
 
     runtimeConfig: {
-        dbUrl: '~/server/data/jwtrains.db'
+        turso: {
+            dbUrl: '',
+            dbAuthToken: ''
+        }
     }
 })
