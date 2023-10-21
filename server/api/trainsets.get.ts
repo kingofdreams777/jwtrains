@@ -1,4 +1,5 @@
-import { TrainSet, trainsets } from "~/drizzle/schema";
+import { trainsets } from "~/drizzle/migrations/schema";
+import { TrainSet } from "~/drizzle/types";
 
 export default defineEventHandler(async () => {
     const db = useTurso();

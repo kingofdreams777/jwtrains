@@ -1,6 +1,5 @@
 import { sqliteTable, text, index, integer, real } from "drizzle-orm/sqlite-core"
 
-
 export const libsqlWasmFuncTable = sqliteTable("libsql_wasm_func_table", {
     name: text("name").primaryKey().notNull(),
     body: text("body"),
@@ -30,6 +29,7 @@ export const traincomponents = sqliteTable("traincomponents", {
 },
     (table) => {
         return {
+            setNumber: index("traincomponents_set_number").on(table.set),
             number: index("traincomponents_number").on(table.number),
         }
     });

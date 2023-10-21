@@ -16,17 +16,55 @@ const searchOptions: SearchOption[] = [
     { id: 3, description: "Search Components by Description" }
 ]
 
-const searchOption = ref("");
+const searchOption: Ref<number> = ref(0);
+const searchYear: Ref<number> = ref(0);
 const searchCriteria = ref("");
 
-const data = await useAsyncData('/api/trainsets', () => {
+const isNumber = computed(() => {
+    return searchOption.value == 2;
 });
 
-async function searchSets() {
 
+async function sendRequest(body: string) {
+    console.log("Sending request");
+    return await $fetch('/api/trainsets', {
+        method: 'POST',
+        body: body
+    });
 }
 
-async function search(e) {
+async function search() {
+    console.log("Search option is: " + searchOption.value);
+    console.log("Search criteria is: " + searchCriteria.value);
+    console.log("Search year is: " + searchYear.value);
+    console.log("Is number: " + isNumber.value);
+    return await useAsyncData('/api/trainsets', () => {
+        console.log("Search option is: " + searchOption.value);
+
+        if (isNumber.value) {
+            const request: TrainSetRequest = {
+                number: undefined,
+                year: searchYear.value
+            };
+
+            console.log("Request is: " + JSON.stringify(request));
+
+            const response = sendRequest(JSON.stringify(request));
+
+            return response;
+        } else {
+            const request: TrainComponentRequest = {
+                number: searchCriteria.value,
+                description: undefined
+            };
+
+            console.log("Request is: " + JSON.stringify(request));
+
+            const response = sendRequest(JSON.stringify(request));
+
+            return response;
+        }
+    })
 }
 
 </script>
@@ -39,8 +77,10 @@ async function search(e) {
             <option value="2">Search Sets by Year</option>
             <option value="3">Search Components by Description</option>
         </select>
-        <input type="text" v-model="searchCriteria" class="input w-2/12 max-w-xs bg-white text-black border-black"
-            placeholder="Type Here" required />
+        <input v-if="isNumber" type="number" v-model="searchYear"
+            class="input w-2/12 max-w-xs bg-white text-black border-black" placeholder="Type Here" required />
+        <input v-else="!isNumber" type="text" v-model="searchCriteria"
+            class="input w-2/12 max-w-xs bg-white text-black border-black" placeholder="Type Here" required />
         <div>
             <button class="btn btn-primary border-black" @click="search">Search</button>
         </div>

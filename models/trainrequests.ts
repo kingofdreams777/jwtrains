@@ -1,11 +1,11 @@
 export type TrainComponentRequest = {
-    number: string,
-    description: string
+    number: string | undefined,
+    description: string | undefined
 };
 
 export type TrainSetRequest = {
-    number: string,
-    year: number
+    number: string | undefined,
+    year: number | undefined
 };
 
 export type TrainArticleRequest = {

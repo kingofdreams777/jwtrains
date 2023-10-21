@@ -1,4 +1,4 @@
-import { trainarticles } from "~/drizzle/schema";
+import { trainarticles } from "~/drizzle/migrations/schema";
 
 export default defineEventHandler(async (event) => {
     const db = useTurso();

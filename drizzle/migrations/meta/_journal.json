@@ -8,6 +8,13 @@
       "when": 1697848120950,
       "tag": "0000_fast_zuras",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1697865811760,
+      "tag": "0001_loud_james_howlett",
+      "breakpoints": true
     }
   ]
 }
