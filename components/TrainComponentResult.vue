@@ -11,13 +11,13 @@ const props = defineProps({
     },
 });
 
-const component = props.comp;
+const comp = props.comp;
 
 function getImageUrl(name: string) {
     return new URL(`../assets/images/${name}`, import.meta.url).href;
 }
 
-const imageUrl = getImageUrl(component.image);
+const imageUrl = getImageUrl(comp.image);
 </script>
 
 <template>
