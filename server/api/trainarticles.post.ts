@@ -13,7 +13,7 @@ async function searchByComponent(db: LibSQLDatabase, compNum: string[]) {
 }
 
 export default defineEventHandler(async (event) => {
-    const db = useTurso();
+    const db = await useTurso();
     const request = await readBody<TrainArticleRequest>(event);
 
     if (!request.component) {

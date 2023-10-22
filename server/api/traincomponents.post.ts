@@ -22,16 +22,16 @@ async function searchByDescription(db: LibSQLDatabase, description: string) {
     return trainComponents as unknown as TrainComponent[];
 }
 
-async function searchBySet(db: LibSQLDatabase, sets: TrainSet[]) {
+async function searchBySet(db: LibSQLDatabase, sets: string[]) {
     const trainComponents = await db.select()
         .from(traincomponents)
-        .where(inArray(traincomponents.set, sets.map(set => set.number)));
+        .where(inArray(traincomponents.set, sets));
 
     return trainComponents as unknown as TrainComponent[];
 }
 
 export default defineEventHandler(async (event) => {
-    const db = useTurso();
+    const db = await useTurso();
     const request = await readBody<TrainComponentRequest>(event);
 
     var trainComponents: TrainComponent[] = [];

@@ -28,8 +28,6 @@ async function sendComponentRequest(body: string) {
 
 async function search() {
     return await useAsyncData('/api/trainsets', () => {
-        console.log("Search option is: " + searchOption.value);
-
         if (isNumber.value) {
             const request: TrainSetRequest = {
                 number: undefined,

@@ -1,8 +1,8 @@
 import { eq, inArray } from "drizzle-orm";
 import { LibSQLDatabase } from "drizzle-orm/libsql";
 import { trainsets } from "~/drizzle/migrations/schema";
-import { TrainSet } from "~/drizzle/types";
-import { TrainSetRequest } from "~/models/trainrequests";
+import { TrainSet, ITrainComponent } from "~/drizzle/types";
+import { TrainComponentRequest, TrainSetRequest } from "~/models/trainrequests";
 import { TrainSetResponse } from "~/models/trainresponse";
 
 async function searchByNumber(db: LibSQLDatabase, setNumber: string[]): Promise<TrainSet[]> {
@@ -18,6 +18,31 @@ async function searchByYear(db: LibSQLDatabase, year: number): Promise<TrainSet[
         .where(eq(trainsets.year, year));
     return trainSet as unknown as TrainSet[];
 };
+
+async function getComponents(setNumbers: string[]): Promise<ITrainComponent[]> {
+    const request: TrainComponentRequest = {
+        number: undefined,
+        description: undefined,
+        sets: setNumbers
+    };
+
+    const components = $fetch('/api/traincomponents', {
+        method: 'POST',
+        body: request
+    })
+
+    return components as unknown as ITrainComponent[];
+}
+
+function addComponentsToSet(set: TrainSetResponse, components: ITrainComponent[]): TrainSetResponse {
+    components.forEach(component => {
+        if (component.set == set.number) {
+            set.components.push(component);
+        }
+    });
+
+    return set;
+}
 
 function compressTrainSets(trainsets: TrainSet[]): TrainSetResponse[] {
     var compSets: TrainSetResponse[] = [];
@@ -36,7 +61,8 @@ function compressTrainSets(trainsets: TrainSet[]): TrainSetResponse[] {
                 price: trainset.price.toString(),
                 description: trainset.description,
                 track: trainset.track,
-                transformer: trainset.transformer
+                transformer: trainset.transformer,
+                components: []
             });
         } else {
             compSets[foundIndex].year += `, ${trainset.year}`;
@@ -47,8 +73,9 @@ function compressTrainSets(trainsets: TrainSet[]): TrainSetResponse[] {
     return compSets;
 }
 
+
 export default defineEventHandler(async (event) => {
-    const db = useTurso();
+    const db = await useTurso();
     const request = await readBody<TrainSetRequest>(event);
     var trainSets: TrainSet[] = [];
 
@@ -59,6 +86,14 @@ export default defineEventHandler(async (event) => {
     }
 
     const compressedSets = compressTrainSets(trainSets);
+
+    const setNums = compressedSets.map(set => set.number);
+
+    const components = await getComponents(setNums);
+
+    compressedSets.forEach(set => {
+        addComponentsToSet(set, components);
+    });
 
     return compressedSets;
 });
