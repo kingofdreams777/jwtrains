@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ITrainSet, ITrainComponent } from '~/drizzle/types';
 import type { TrainComponentRequest } from '~/models/trainrequests';
+import { ref } from 'vue';
 const props = defineProps({
     trainset: {
         type: Object as PropType<ITrainSet>,
@@ -10,7 +11,7 @@ const props = defineProps({
 
 const trainset = props.trainset;
 
-const { data: components, pending: componentPending } = await useLazyAsyncData<ITrainComponent[]>(() => {
+const { data: components } = await useLazyAsyncData<ITrainComponent[]>(`${trainset.number}/components`, () => {
     const request: TrainComponentRequest = {
         sets: [trainset.number],
         numbers: undefined,
@@ -23,15 +24,13 @@ const { data: components, pending: componentPending } = await useLazyAsyncData<I
     });
 });
 
+const componentImage: Ref<string> = ref('');
+
 function getImageUrl(name: string): string {
     if (name == '') {
         return new URL(`../assets/images/noImage.jpg`, import.meta.url).href;
     }
     return new URL(`../assets/images/${name}`, import.meta.url).href;
-}
-
-function createId(name: string): string {
-    return name.replace(/\s+/g, '-').toLowerCase();
 }
 </script>
 
@@ -65,17 +64,9 @@ function createId(name: string): string {
                                     <tr class="table-row" v-for="component in components">
                                         <td class="table-cell">
                                             <div v-if="component.image != ''">
-                                                <a class="link text-accent" onclick="imagemodal.showModal()">{{ component.number }}</a> 
-                                                <dialog id="imagemodal" class="modal">
-                                                    <div class="modal-box">
-                                                        <NuxtImg :src="getImageUrl(component.image)" class="w-full h-full" />
-                                                    </div>
-                                                    <div class="modal-action">
-                                                        <form method="dialog">
-                                                            <button class="btn btn-secondary">Close</button>
-                                                        </form>
-                                                    </div>
-                                                </dialog>
+                                                <a :href="getImageUrl(component.image)" class="link text-accent"
+                                                    target="_blank">{{
+                                                        component.number }}</a>
                                             </div>
                                             <div v-else>
                                                 <p>{{ component.number }}</p>

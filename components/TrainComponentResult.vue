@@ -10,9 +10,9 @@ const props = defineProps({
 
 const comp = props.comp;
 
-const {data: articles , pending: articlePending} = await useLazyAsyncData<ITrainArticle[]>(() => {
+const { data: articles, pending: articlePending } = await useLazyAsyncData<ITrainArticle[]>(`${comp.number}/articles`, () => {
     const request: TrainArticleRequest = {
-    component: [comp.number]
+        component: [comp.number]
     }
     return $fetch('/api/trainarticles/', {
         method: 'POST',
@@ -20,7 +20,7 @@ const {data: articles , pending: articlePending} = await useLazyAsyncData<ITrain
     })
 })
 
-const {data: sets, pending: setPending} = await useLazyAsyncData<ITrainSet[]>(() => {
+const { data: sets, pending: setPending } = await useLazyAsyncData<ITrainSet[]>(`${comp.number}/sets`, () => {
     const request: TrainSetRequest = {
         numbers: [comp.set],
         year: undefined
@@ -45,9 +45,6 @@ const imageUrl = getImageUrl(comp.image);
 </script>
 
 <template>
-    <div>
-        <h1>Number of Components Found: {{  }}</h1>
-    </div>
     <div class="table overflow-x-auto bg-white">
         <table class="border-black">
             <thead class=" table-header-group">
@@ -71,7 +68,7 @@ const imageUrl = getImageUrl(comp.image);
                             <div>
                                 <p><b>Repair Article by JWTrains</b></p>
                                 <div v-if="articlePending" class="flex flex-row">
-                                <span class="loading loading-spinner loading-lg"></span>
+                                    <span class="loading loading-spinner loading-lg"></span>
                                 </div>
                                 <div v-else v-for="article in articles" :key="article.number">
                                     <p><b>Number:</b> {{ article.number }}</p>
