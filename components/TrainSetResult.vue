@@ -8,20 +8,6 @@ const props = defineProps({
     },
 });
 
-const trainset = props.trainset;
-
-onMounted(() => {
-    const components = useLazyAsyncData<ITrainComponent[]>(async () => {
-        const componentRequest: TrainComponentRequest = {
-            number: undefined,
-            description: undefined,
-            sets: [trainset],
-        }
-        const data = await $fetch;
-        return data.json();
-    });
-})
-
 function getImageUrl(name: string) {
     return new URL(`../assets/images/${name}`, import.meta.url).href;
 }

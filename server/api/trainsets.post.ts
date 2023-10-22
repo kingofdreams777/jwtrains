@@ -85,6 +85,10 @@ export default defineEventHandler(async (event) => {
         trainSets = await searchByYear(db, request.year);
     }
 
+    if (trainSets == undefined || trainSets.length == 0) {
+        return [];
+    }
+
     const compressedSets = compressTrainSets(trainSets);
 
     const setNums = compressedSets.map(set => set.number);

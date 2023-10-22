@@ -8,18 +8,18 @@ const searchYear: Ref<number> = ref(0);
 const searchCriteria = ref("");
 
 const isNumber = computed(() => {
-    return searchOption.value == 2;
+    return searchOption.value == 3;
 });
 
 
-async function sendSetRequest(body: string) {
+async function sendSetRequest(body: TrainSetRequest) {
     return await $fetch('/api/trainsets', {
         method: 'POST',
         body: body
     });
 }
 
-async function sendComponentRequest(body: string) {
+async function sendComponentRequest(body: TrainComponentRequest) {
     return await $fetch('/api/traincomponents', {
         method: 'POST',
         body: body
@@ -27,30 +27,34 @@ async function sendComponentRequest(body: string) {
 }
 
 async function search() {
-    return await useAsyncData('/api/trainsets', () => {
-        if (isNumber.value) {
-            const request: TrainSetRequest = {
+    switch (searchOption.value) {
+        case 1:
+            const setRequest: TrainSetRequest = {
+                number: searchCriteria.value,
+                year: undefined
+            };
+
+            const setResponse = await sendSetRequest(setRequest);
+            return setResponse;
+        case 2:
+            const yearRequest: TrainSetRequest = {
                 number: undefined,
                 year: searchYear.value
             };
 
-            console.log("Request is: " + JSON.stringify(request));
-
-            const response = sendSetRequest(JSON.stringify(request));
-
-            return response;
-        } else {
-            const request: TrainComponentRequest = {
-                number: searchCriteria.value,
-                description: undefined,
+            const yearResponse = await sendSetRequest(yearRequest);
+            return yearResponse;
+        case 3:
+            const descriptionRequest: TrainComponentRequest = {
+                number: undefined,
+                description: searchCriteria.value,
                 sets: undefined
             };
-
-            const response = sendSetRequest(JSON.stringify(request));
-
-            return response;
-        }
-    })
+            const descriptionResponse = await sendComponentRequest(descriptionRequest);
+            return descriptionResponse;
+        default:
+            break;
+    }
 }
 </script>
 
@@ -58,9 +62,10 @@ async function search() {
     <div class="flex flex-row">
         <select class="select w-full max-w-xs bg-white text-black border-black" v-model="searchOption" required>
             <option value="" disabled="true" selected="true">Select Search Option</option>
-            <option value="1">Search Sets/Components by Number</option>
-            <option value="2">Search Sets by Year</option>
-            <option value="3">Search Components by Description</option>
+            <option value="1">Search Components by Number</option>
+            <option value="2">Search Sets by Number</option>
+            <option value="3">Search Sets by Year</option>
+            <option value="4">Search Components by Description</option>
         </select>
         <input v-if="isNumber" type="number" v-model="searchYear"
             class="input w-2/12 max-w-xs bg-white text-black border-black" placeholder="Type Here" required />
