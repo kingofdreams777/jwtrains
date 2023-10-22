@@ -1,9 +1,13 @@
+import * as dotenv from "dotenv";
 import type { Config } from "drizzle-kit";
+dotenv.config();
 
 export default {
     schema: "./drizzle/schema.ts",
-    driver: "better-sqlite",
+    out: "./drizzle/migrations",
+    driver: "turso",
     dbCredentials: {
-        url: "./drizzle/jwtrains.db",
+        url: process.env.NUXT_TURSO_DB_URL as string,
+        authToken: process.env.NUXT_TURSO_DB_AUTH_TOKEN as string,
     },
 } satisfies Config;
