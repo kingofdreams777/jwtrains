@@ -12,11 +12,11 @@ export interface ITrainSet {
     number: string;
     year: number;
     gauge: string;
-    price: number;
+    price: number | undefined;
     description: string;
     track: string;
-    transformer: string;
-}
+    transformer: string | undefined;
+};
 
 export type TrainComponent = {
     number: string;
@@ -32,6 +32,7 @@ export interface ITrainComponent {
     gauge: string;
     set: string;
     image: string;
+    sets: ITrainSet[] | undefined;
 }
 
 export type TrainArticle = {
@@ -46,11 +47,11 @@ export type TrainArticle = {
 
 
 export interface ITrainArticle {
-    number: string;
-    category: string;
-    description: string;
-    component: string;
-    lastUpdated: string;
-    filename: string;
-    image: string;
+    number: string | undefined;
+    category: string | undefined;
+    description: string | undefined;
+    component: string | undefined;
+    lastUpdated: string | undefined;
+    filename: string | undefined;
+    image: string | undefined;
 };

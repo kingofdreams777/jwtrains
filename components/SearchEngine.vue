@@ -3,11 +3,6 @@ import { useAsyncData } from 'nuxt/app';
 import type { TrainSetRequest, TrainComponentRequest } from '~/models/trainrequests';
 import { computed, ref } from 'vue';
 
-type SearchOption = {
-    id: number;
-    description: string;
-};
-
 const searchOption: Ref<number> = ref(0);
 const searchYear: Ref<number> = ref(0);
 const searchCriteria = ref("");
@@ -17,19 +12,21 @@ const isNumber = computed(() => {
 });
 
 
-async function sendRequest(body: string) {
-    console.log("Sending request");
+async function sendSetRequest(body: string) {
     return await $fetch('/api/trainsets', {
         method: 'POST',
         body: body
     });
 }
 
+async function sendComponentRequest(body: string) {
+    return await $fetch('/api/traincomponents', {
+        method: 'POST',
+        body: body
+    });
+}
+
 async function search() {
-    console.log("Search option is: " + searchOption.value);
-    console.log("Search criteria is: " + searchCriteria.value);
-    console.log("Search year is: " + searchYear.value);
-    console.log("Is number: " + isNumber.value);
     return await useAsyncData('/api/trainsets', () => {
         console.log("Search option is: " + searchOption.value);
 
@@ -41,31 +38,29 @@ async function search() {
 
             console.log("Request is: " + JSON.stringify(request));
 
-            const response = sendRequest(JSON.stringify(request));
+            const response = sendSetRequest(JSON.stringify(request));
 
             return response;
         } else {
             const request: TrainComponentRequest = {
                 number: searchCriteria.value,
-                description: undefined
+                description: undefined,
+                sets: undefined
             };
 
-            console.log("Request is: " + JSON.stringify(request));
-
-            const response = sendRequest(JSON.stringify(request));
+            const response = sendSetRequest(JSON.stringify(request));
 
             return response;
         }
     })
 }
-
 </script>
 
 <template>
     <div class="flex flex-row">
-        <select class="select w-full max-w-xs bg-white text-black border-black" v-model="searchOption">
-            <option value="" disabled selected>Select Search Option</option>
-            <option value="1" selected>Search Sets/Components by Number</option>
+        <select class="select w-full max-w-xs bg-white text-black border-black" v-model="searchOption" required>
+            <option value="" disabled="true" selected="true">Select Search Option</option>
+            <option value="1">Search Sets/Components by Number</option>
             <option value="2">Search Sets by Year</option>
             <option value="3">Search Components by Description</option>
         </select>
