@@ -8,6 +8,8 @@ const props = defineProps({
     },
 });
 
+const trainset = props.trainset;
+
 function getImageUrl(name: string) {
     return new URL(`../assets/images/${name}`, import.meta.url).href;
 }
@@ -40,7 +42,14 @@ function getImageUrl(name: string) {
                                     <th>Description</th>
                                 </thead>
                                 <tbody>
-
+                                    <tr class="table-row" v-for="component in trainset.components">
+                                        <td class="table-cell">
+                                            <a :href="getImageUrl(component.image)">{{ component.number }}</a> 
+                                        </td>
+                                        <td>
+                                            <p>{{ component.description }}</p>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

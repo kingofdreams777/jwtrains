@@ -3,8 +3,9 @@ import { inArray } from "drizzle-orm";
 import { trainarticles } from "~/drizzle/migrations/schema";
 import { TrainArticle } from "~/drizzle/types";
 import type { TrainArticleRequest } from "~/models/trainrequests";
+import * as schema from "~/drizzle/migrations/schema";
 
-async function searchByComponent(db: LibSQLDatabase, compNum: string[]) {
+async function searchByComponent(db: LibSQLDatabase<typeof schema>, compNum: string[]) {
     const articles = await db.select()
         .from(trainarticles)
         .where(inArray(trainarticles.component, compNum));

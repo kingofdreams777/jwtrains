@@ -1,21 +1,30 @@
 <script setup lang="ts">
 import type { ITrainComponent, ITrainArticle } from '~/drizzle/types';
+import type { TrainArticleRequest } from '~/models/trainrequests';
 const props = defineProps({
     comp: {
         type: Object as PropType<ITrainComponent>,
         required: true,
-    },
-    article: {
-        type: Object as PropType<ITrainArticle>,
-        required: false,
-    },
+    }
 });
 
 const comp = props.comp;
 
+const {data , pending, error} = await useLazyAsyncData<ITrainArticle[]>(() => {
+    const request: TrainArticleRequest = {
+    component: [comp.number]
+    }
+    return $fetch('/api/trainarticles/', {
+        method: 'POST',
+        body: request
+    })
+})
+
 function getImageUrl(name: string) {
     return new URL(`../assets/images/${name}`, import.meta.url).href;
 }
+
+
 
 const imageUrl = getImageUrl(comp.image);
 </script>
@@ -43,9 +52,14 @@ const imageUrl = getImageUrl(comp.image);
                             <p><b>Gauge:</b> {{ comp.gauge }}</p>
                             <div>
                                 <p><b>Repair Article by JWTrains</b></p>
-                                <p><b>Number:</b> {{ article?.number }}</p>
-                                <p><b>Category:</b> {{ article?.category }}</p>
-                                <p><b>Description:</b> {{ article?.description }}</p>
+                                <div v-if="pending" class="flex flex-row">
+                                <span class="loading loading-spinner loading-lg"></span>
+                                </div>
+                                <div v-else v-for="article in data" :key="article.number">
+                                    <p><b>Number:</b> {{ article.number }}</p>
+                                    <p><b>Category:</b> {{ article.category }}</p>
+                                    <p><b>Description:</b> {{ article.description }}</p>
+                                </div>
                             </div>
                             <div class="table overflow-x-auto border-black">
                                 <p><b>Sets containing this component:</b></p>

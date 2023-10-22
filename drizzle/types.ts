@@ -16,7 +16,7 @@ export interface ITrainSet {
     description: string;
     track: string;
     transformer: string | undefined;
-    components: ITrainComponent[] | undefined;
+    components: ITrainComponent[];
 };
 
 export type TrainComponent = {
@@ -33,7 +33,7 @@ export interface ITrainComponent {
     gauge: string;
     set: string;
     image: string;
-    sets: ITrainSet[] | undefined;
+    sets: TrainSet[];
 }
 
 export type TrainArticle = {

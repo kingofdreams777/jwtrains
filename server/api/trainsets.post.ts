@@ -4,15 +4,16 @@ import { trainsets } from "~/drizzle/migrations/schema";
 import { TrainSet, ITrainComponent } from "~/drizzle/types";
 import { TrainComponentRequest, TrainSetRequest } from "~/models/trainrequests";
 import { TrainSetResponse } from "~/models/trainresponse";
+import * as schema from '@/drizzle/migrations/schema';
 
-async function searchByNumber(db: LibSQLDatabase, setNumber: string[]): Promise<TrainSet[]> {
+async function searchByNumber(db: LibSQLDatabase<typeof schema>, setNumber: string[]): Promise<TrainSet[]> {
     const trainSet = await db.select()
         .from(trainsets)
         .where(inArray(trainsets.number, setNumber));
     return trainSet as unknown as TrainSet[];
 };
 
-async function searchByYear(db: LibSQLDatabase, year: number): Promise<TrainSet[]> {
+async function searchByYear(db: LibSQLDatabase<typeof schema>, year: number): Promise<TrainSet[]> {
     const trainSet = await db.select()
         .from(trainsets)
         .where(eq(trainsets.year, year));
@@ -21,9 +22,10 @@ async function searchByYear(db: LibSQLDatabase, year: number): Promise<TrainSet[
 
 async function getComponents(setNumbers: string[]): Promise<ITrainComponent[]> {
     const request: TrainComponentRequest = {
-        number: undefined,
+        numbers: undefined,
         description: undefined,
-        sets: setNumbers
+        sets: setNumbers,
+        getSets: false
     };
 
     const components = $fetch('/api/traincomponents', {
@@ -79,10 +81,12 @@ export default defineEventHandler(async (event) => {
     const request = await readBody<TrainSetRequest>(event);
     var trainSets: TrainSet[] = [];
 
-    if (request.number) {
-        trainSets = await searchByNumber(db, request.number);
+    if (request.numbers) {
+        trainSets = await searchByNumber(db, request.numbers);
     } else {
-        trainSets = await searchByYear(db, request.year);
+        if (request.year) {
+            trainSets = await searchByYear(db, request.year);
+        }
     }
 
     if (trainSets == undefined || trainSets.length == 0) {
@@ -91,13 +95,19 @@ export default defineEventHandler(async (event) => {
 
     const compressedSets = compressTrainSets(trainSets);
 
-    const setNums = compressedSets.map(set => set.number);
+    if (request.getComponents) {
+        const setNums = compressedSets.map(set => set.number);
 
-    const components = await getComponents(setNums);
+        const components = await getComponents(setNums);
 
-    compressedSets.forEach(set => {
-        addComponentsToSet(set, components);
-    });
+        compressedSets.forEach(set => {
+            addComponentsToSet(set, components);
+        });
+    } else {
+        compressedSets.forEach(set => {
+            set.components = [];
+        })
+    }
 
     return compressedSets;
 });
