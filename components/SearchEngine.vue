@@ -8,7 +8,18 @@ const searchYear: Ref<number> = ref(0);
 const searchCriteria = ref("");
 
 const trainSetData = ref<ITrainSet[]>([]);
+const isTrainSetData = ref(false);
 const trainCompData = ref<ITrainComponent[]>([]);
+const isTrainCompData = ref(false);
+
+function toggleIsTrainCompData() {
+    isTrainCompData.value = !isTrainCompData.value;
+}
+
+function refresh() {
+    isTrainCompData.value = false;
+    isTrainSetData.value = false;
+}
 
 const isNumber = computed(() => {
     return searchOption.value == "3";
@@ -29,47 +40,48 @@ async function sendComponentRequest(body: TrainComponentRequest): Promise<ITrain
 }
 
 async function search() {
+    refresh();
     switch (searchOption.value) {
         case "1":
             const compRequest: TrainComponentRequest = {
                 numbers: [searchCriteria.value],
                 description: undefined,
                 sets: undefined,
-                getSets: true
             };
 
             const compResponse = await sendComponentRequest(compRequest);
             trainCompData.value = compResponse;
+            isTrainCompData.value = true;
             return compResponse;
         case "2":
             const setRequest: TrainSetRequest = {
                 numbers: [searchCriteria.value],
                 year: undefined,
-                getComponents: true
             };
 
             const setResponse = await sendSetRequest(setRequest);
             trainSetData.value = setResponse;
+            isTrainSetData.value = true;
             return setResponse;
         case "3":
             const yearRequest: TrainSetRequest = {
                 numbers: undefined,
                 year: searchYear.value,
-                getComponents: true
             };
 
             const yearResponse = await sendSetRequest(yearRequest);
             trainSetData.value = yearResponse;
+            isTrainSetData.value = true;
             return yearResponse;
         case "4":
             const descriptionRequest: TrainComponentRequest = {
                 numbers: undefined,
                 description: searchCriteria.value,
                 sets: undefined,
-                getSets: true
             };
             const descriptionResponse = await sendComponentRequest(descriptionRequest);
             trainCompData.value = descriptionResponse;
+            isTrainCompData.value = true;
             return descriptionResponse;
         default:
             break;
@@ -94,11 +106,21 @@ async function search() {
             <button class="btn btn-primary border-black" @click="search">Search</button>
         </div>
     </div>
-    <div v-if="trainCompData.values.length !== 0" v-for="component in trainCompData.values">
-        <TrainComponentResult :comp="component" :pending="true" />
+    <div v-if="isTrainCompData">
+        <div class="prose">
+            <h2>Number of Components Found: {{ trainCompData.length }}</h2>
+        </div>
+        <div v-for="component in trainCompData">
+            <TrainComponentResult :comp="component" />
+        </div>
     </div>
-    <div v-else-if="trainSetData.values.length != 0" v-for="set in trainSetData.values">
-        <TrainSetResult :trainset="set" />
+    <div v-else-if="isTrainSetData">
+        <div class="prose">
+            <h2>Number of Sets Found: {{ trainSetData.length }}</h2>
+        </div>
+        <div v-for="set in trainSetData">
+            <TrainSetResult :trainset="set" />
+        </div>
     </div>
     <div v-else>
         <EnterSearchPrompt />

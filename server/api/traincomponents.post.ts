@@ -36,7 +36,6 @@ async function getSetsForComponents(sets: string[]): Promise<TrainSet[]> {
     const request: TrainSetRequest = {
         numbers: sets,
         year: undefined,
-        getComponents: false
     };
 
     const trainsets = await $fetch('/api/trainsets', {
@@ -89,17 +88,8 @@ export default defineEventHandler(async (event) => {
         trainComponents = await searchBySet(db, request.sets);
     }
 
-    if (request.getSets) {
-        const setNums = trainComponents.map(component => component.set);
 
-        const sets = await getSetsForComponents(setNums);
-
-        const compressedComponents = compressTrainComponents(trainComponents);
-
-        compressedComponents.forEach(component => {
-            addSetsToComponent(component, sets);
-        })
-    }
+    const compressedComponents = compressTrainComponents(trainComponents);
 
     return trainComponents;
 })

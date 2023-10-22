@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import type { ITrainComponent, ITrainArticle } from '~/drizzle/types';
-import type { TrainArticleRequest } from '~/models/trainrequests';
+import { type ITrainComponent, type ITrainArticle, type ITrainSet } from '~/drizzle/types';
+import type { TrainArticleRequest, TrainSetRequest } from '~/models/trainrequests';
 const props = defineProps({
     comp: {
         type: Object as PropType<ITrainComponent>,
         required: true,
-    }
+    },
 });
 
 const comp = props.comp;
 
-const {data , pending, error} = await useLazyAsyncData<ITrainArticle[]>(() => {
+const {data: articles , pending: articlePending} = await useLazyAsyncData<ITrainArticle[]>(() => {
     const request: TrainArticleRequest = {
     component: [comp.number]
     }
@@ -20,7 +20,22 @@ const {data , pending, error} = await useLazyAsyncData<ITrainArticle[]>(() => {
     })
 })
 
+const {data: sets, pending: setPending} = await useLazyAsyncData<ITrainSet[]>(() => {
+    const request: TrainSetRequest = {
+        numbers: [comp.set],
+        year: undefined
+    }
+
+    return $fetch('/api/trainsets/', {
+        method: 'POST',
+        body: request
+    });
+})
+
 function getImageUrl(name: string) {
+    if (name == "") {
+        return new URL(`../assets/images/noImage.jpg`, import.meta.url).href;
+    }
     return new URL(`../assets/images/${name}`, import.meta.url).href;
 }
 
@@ -30,6 +45,9 @@ const imageUrl = getImageUrl(comp.image);
 </script>
 
 <template>
+    <div>
+        <h1>Number of Components Found: {{  }}</h1>
+    </div>
     <div class="table overflow-x-auto bg-white">
         <table class="border-black">
             <thead class=" table-header-group">
@@ -52,10 +70,10 @@ const imageUrl = getImageUrl(comp.image);
                             <p><b>Gauge:</b> {{ comp.gauge }}</p>
                             <div>
                                 <p><b>Repair Article by JWTrains</b></p>
-                                <div v-if="pending" class="flex flex-row">
+                                <div v-if="articlePending" class="flex flex-row">
                                 <span class="loading loading-spinner loading-lg"></span>
                                 </div>
-                                <div v-else v-for="article in data" :key="article.number">
+                                <div v-else v-for="article in articles" :key="article.number">
                                     <p><b>Number:</b> {{ article.number }}</p>
                                     <p><b>Category:</b> {{ article.category }}</p>
                                     <p><b>Description:</b> {{ article.description }}</p>
@@ -63,7 +81,10 @@ const imageUrl = getImageUrl(comp.image);
                             </div>
                             <div class="table overflow-x-auto border-black">
                                 <p><b>Sets containing this component:</b></p>
-                                <div class=" table">
+                                <div v-if="setPending" class="flex flex-row">
+                                    <span class="loading loading-spinner loading-lg"></span>
+                                </div>
+                                <div v-else class="table">
                                     <table>
                                         <thead>
                                             <th>Set #</th>
@@ -75,7 +96,7 @@ const imageUrl = getImageUrl(comp.image);
                                             <th>Transformer</th>
                                         </thead>
                                         <tbody>
-                                            <tr v-for="set in comp.sets" :key="set.number">
+                                            <tr v-for="set in sets" :key="set.number">
                                                 <td>{{ set.number }}</td>
                                                 <td>{{ set.year }}</td>
                                                 <td>{{ set.price }}</td>
