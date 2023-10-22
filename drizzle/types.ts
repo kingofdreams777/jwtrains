@@ -16,6 +16,7 @@ export interface ITrainSet {
     description: string;
     track: string;
     transformer: string | undefined;
+    components: ITrainComponent[] | undefined;
 };
 
 export type TrainComponent = {

@@ -4,10 +4,10 @@ import { traincomponents } from '~/drizzle/migrations/schema';
 import { TrainComponent, TrainSet } from '~/drizzle/types';
 import { TrainComponentRequest } from '~/models/trainrequests';
 
-async function searchByNumber(db: LibSQLDatabase, number: string) {
+async function searchByNumber(db: LibSQLDatabase, numbers: string[]) {
     const trainComponents = await db.select()
         .from(traincomponents)
-        .where(eq(traincomponents.number, number));
+        .where(inArray(traincomponents.number, numbers));
 
     return trainComponents as unknown as TrainComponent[];
 }
@@ -42,4 +42,9 @@ export default defineEventHandler(async (event) => {
     if (request.description) {
         trainComponents = await searchByDescription(db, request.description);
     }
+    if (request.sets) {
+        trainComponents = await searchBySet(db, request.sets);
+    }
+
+    return trainComponents;
 })

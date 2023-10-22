@@ -1,14 +1,14 @@
-import { eq } from "drizzle-orm";
+import { eq, inArray } from "drizzle-orm";
 import { LibSQLDatabase } from "drizzle-orm/libsql";
 import { trainsets } from "~/drizzle/migrations/schema";
 import { TrainSet } from "~/drizzle/types";
 import { TrainSetRequest } from "~/models/trainrequests";
 import { TrainSetResponse } from "~/models/trainresponse";
 
-async function searchByNumber(db: LibSQLDatabase, setNumber: string): Promise<TrainSet[]> {
+async function searchByNumber(db: LibSQLDatabase, setNumber: string[]): Promise<TrainSet[]> {
     const trainSet = await db.select()
         .from(trainsets)
-        .where(eq(trainsets.number, setNumber));
+        .where(inArray(trainsets.number, setNumber));
     return trainSet as unknown as TrainSet[];
 };
 
@@ -33,13 +33,14 @@ function compressTrainSets(trainsets: TrainSet[]): TrainSetResponse[] {
                 number: trainset.number,
                 year: trainset.year.toString(),
                 gauge: trainset.gauge,
-                price: trainset.price,
+                price: trainset.price.toString(),
                 description: trainset.description,
                 track: trainset.track,
                 transformer: trainset.transformer
             });
         } else {
             compSets[foundIndex].year += `, ${trainset.year}`;
+            compSets[foundIndex].price += `(${compSets[foundIndex].year}), ${trainset.price} (${trainset.year})`
         }
     });
 

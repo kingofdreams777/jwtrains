@@ -1,3 +1,4 @@
+import type { ITrainComponent } from "../drizzle/types";
 export type TrainResponse = {
     code: number,
     message: string,
@@ -8,10 +9,11 @@ export type TrainSetResponse = {
     number: string,
     year: string,
     gauge: string,
-    price: number,
+    price: string,
     description: string,
     track: string,
     transformer: string,
+    components: ITrainComponent[] | undefined
 }
 
 export interface ITrainSetResponse {
