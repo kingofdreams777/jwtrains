@@ -3,22 +3,20 @@ import { computed } from 'vue';
 
 const img = useImage();
 
-const indexHero = computed(() => {
-    const imgUrl = img('/indexstockbackground.jpg');
-    return {
-        backgroundImage: `url('${imgUrl}')`,
-    };
+const indexHeroPortrait = computed(() => {
+    const imgUrl = img('/indexportrait.jpg');
+    return `url('${imgUrl}')`
 });
 
 const indexThirdHero = computed(() => {
     const imgUrl = img('/landscapetrainhills.jpg');
-    return { backgroundImage: `url('${imgUrl}')` };
+    return `url('${imgUrl}')`;
 });
 
 </script>
 
 <template>
-    <div class="hero min-h-screen indexhero" :style="indexHero">
+    <div class="hero min-h-screen indexhero">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content grid">
             <div class="prose sm:prose-xl">
@@ -110,7 +108,7 @@ const indexThirdHero = computed(() => {
         </div>
     </div>
 
-    <div class="hero min-h-screen indexhero" :style="indexHero">
+    <div class="hero min-h-screen indexhero">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex flex-row flex-shrink">
             <div class="prose prose-h1:text-white prose-p:text-white sm:prose-xl">
@@ -135,10 +133,16 @@ const indexThirdHero = computed(() => {
 
 <style scoped>
 .indexhero {
+    background-image: url('/indexstockbackground.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 640px) {
+        background-image: url('/indexportrait.jpg')
+    }
+
 }
 
 .indexthirdhero {

@@ -99,9 +99,11 @@ async function search() {
             <option value="4">Search Components by Description</option>
         </select>
         <input v-if="isNumber" type="number" v-model="searchYear"
-            class="input w-2/12 max-w-xs bg-white text-black border-black" placeholder="Type Here" required />
+            class="input w-2/12 max-w-xs bg-white text-black border-black" placeholder="Type Here" required
+            @keyup.enter="search" />
         <input v-else="!isNumber" type="text" v-model="searchCriteria"
-            class="input w-2/12 max-w-xs bg-white text-black border-black" placeholder="Type Here" required />
+            class="input w-2/12 max-w-xs bg-white text-black border-black" placeholder="Type Here" required
+            @keyup.enter="search" />
         <div>
             <button class="btn btn-primary border-black" @click="search">Search</button>
         </div>
