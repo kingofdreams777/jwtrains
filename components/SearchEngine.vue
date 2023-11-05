@@ -12,10 +12,6 @@ const isTrainSetData = ref(false);
 const trainCompData = ref<ITrainComponent[]>([]);
 const isTrainCompData = ref(false);
 
-function toggleIsTrainCompData() {
-    isTrainCompData.value = !isTrainCompData.value;
-}
-
 function refresh() {
     isTrainCompData.value = false;
     isTrainSetData.value = false;

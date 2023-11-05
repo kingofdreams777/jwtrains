@@ -61,7 +61,7 @@ const backgroundStyles = computed(() => {
         </div>
 
     </div>
-    <div class="hero min-h-screen bg-neutral-50">
+    <div class="hero min-h-screen bg-secondary">
         <div class="hero-content flex-col lg:flex-row-reverse">
             <img src="/boy_aboutme.jpg" alt="James Weatherford Young">
             <div class="prose sm:prose-xl">

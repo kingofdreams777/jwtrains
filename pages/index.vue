@@ -140,7 +140,10 @@ const indexThirdHero = computed(() => {
     background-size: cover;
 
     @media (max-width: 640px) {
-        background-image: url('/indexportrait.jpg')
+        background-image: url('/indexportrait.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
     }
 
 }

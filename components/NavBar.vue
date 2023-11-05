@@ -34,7 +34,10 @@
                         <NuxtLink to="/videos" class="text-lg link">Buy Videos</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/search" class="text-lg link">Search Engine</NuxtLink>
+                        <div class="indicator">
+                            <span class="indicator-item badge badge-info">New!</span>
+                            <NuxtLink to="/search" class="text-lg link">Search Engine</NuxtLink>
+                        </div>
                     </li>
                 </ul>
             </div>
