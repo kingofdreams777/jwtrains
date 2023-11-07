@@ -21,6 +21,9 @@ const getTheme = () => {
 
 <template>
     <div>
+        <label>
+            <span>Color Theme:</span>
+        </label>
         <select v-model="key" class="select select-md bg-white text-black" data-choose-theme>
             <option disabled selected value="">Choose Color Theme</option>
             <option v-for="(theme, index) in themes" :key="index" :value="theme">

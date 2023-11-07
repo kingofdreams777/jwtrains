@@ -1,17 +1,17 @@
 <template>
     <div>
-        <NavBar />
-    </div>
+        <div>
+            <navbarcomponent />
+        </div>
 
-    <div>
-        <NuxtLayout>
+        <div>
             <NuxtPage />
-        </NuxtLayout>
-    </div>
+        </div>
 
-    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
-        <aside>
-            <p>Copyright © 2023 - James Weatherford</p>
-        </aside>
-    </footer>
+        <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+            <aside>
+                <p>Copyright © 2023 - James Weatherford</p>
+            </aside>
+        </footer>
+    </div>
 </template>
