@@ -1,8 +1,3 @@
-<script setup lang="ts">
-
-const ul: Ref<HTMLElement | null> = ref(null);
-
-</script>
 <template>
     <div class="navbar bg-secondary">
         <div class="navbar-start">
@@ -13,7 +8,7 @@ const ul: Ref<HTMLElement | null> = ref(null);
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
                     </svg>
                 </summary>
-                <ul ref="ul" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li>
                         <NuxtLink to="/" class="text-lg link">Home</NuxtLink>
                     </li>
