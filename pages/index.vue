@@ -3,14 +3,9 @@ import { computed } from 'vue';
 
 const img = useImage();
 
-const indexHeroPortrait = computed(() => {
-    const imgUrl = img('/indexportrait.jpg');
-    return `url('${imgUrl}')`
-});
-
 const indexThirdHero = computed(() => {
     const imgUrl = img('/landscapetrainhills.jpg');
-    return `url('${imgUrl}')`;
+    return `background-image: url('${imgUrl}');`;
 });
 
 </script>
@@ -28,7 +23,8 @@ const indexThirdHero = computed(() => {
 
     <div class="hero min-h-screen bg-base-200">
         <div class="hero-content flex-col lg:flex-row">
-            <NuxtImg src="/portraittrain1.jpg" alt="Portrait Train" class="max-w-sm rounded-lg shadow-2xl" />
+            <LazyNuxtPicture format="webp" src="/portraittrain1.jpg" alt="Portrait Train"
+                class="max-w-sm rounded-lg shadow-2xl" />
             <div class="prose sm:prose-xl">
                 <h1>Do You want to Repair Your Lionel Post War Trains?</h1>
                 <p class="py-6">The articles purchased through this website will enable you to maintain your <i>0-27</i>
@@ -49,7 +45,8 @@ const indexThirdHero = computed(() => {
 
     <div class="hero min-h-screen bg-base-300">
         <div class="hero-content flex-col lg:flex-row-reverse">
-            <NuxtImg src="/portraittrain2.jpg" alt="Black Train Portrait" class="max-w-sm rounded-lg shadow-2xl" />
+            <LazyNuxtPicture format="webp" src="/portraittrain2.jpg" alt="Black Train Portrait"
+                class="max-w-sm rounded-lg shadow-2xl" />
             <div class="prose sm:prose-xl">
                 <h1>Why should you buy my repair articles?</h1>
 

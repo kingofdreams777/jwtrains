@@ -56,7 +56,7 @@ const imageUrl = getImageUrl(comp.image);
                     <td class="table-cell border-black">
                         <div class="flex items-center space-x-3">
                             <div class="avatar">
-                                <NuxtImg :src="imageUrl" class="w-full h-full" />
+                                <LazyNuxtPicture :src="imageUrl" class="w-full h-full" format="webp" quality="70" />
                             </div>
                         </div>
                     </td>

@@ -13,7 +13,8 @@ const backgroundStyles = computed(() => {
     <div class="hero min-h-screen abouthero" v-bind:style="backgroundStyles">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex-col lg:flex-row">
-            <img src="/boy_aboutme.jpg" alt="James Weatherfor Young" class="max-w-sm rounded-lg shadow-2xl">
+            <LazyNuxtPicture src="/boy_aboutme.jpg" alt="James Weatherford Young" class="max-w-sm rounded-lg shadow-2xl"
+                format="webp" />
             <div class="prose sm:prose-xl">
                 <h1 class="text-white">James Weatherford</h1>
                 <p class="py-6 text-white">A Short Biography</p>
@@ -23,7 +24,8 @@ const backgroundStyles = computed(() => {
 
     <div class="hero min-h-screen bg-base-300">
         <div class="hero-content flex-col lg:flex-row">
-            <NuxtImg src="/trainwithsteamportrait.jpg" alt="Steam Train" class="max-w-sm rounded-lg shadow-2xl" />
+            <LazyNuxtPicture format="webp" src="/trainwithsteamportrait.jpg" alt="Steam Train"
+                class="max-w-sm rounded-lg shadow-2xl" />
             <div class="prose sm:prose-xl">
                 <h1>I received my first Lionel Train set</h1>
                 <p> for Christmas in 1953 when I was eight years old. <em>(I'll let you
@@ -63,7 +65,8 @@ const backgroundStyles = computed(() => {
     </div>
     <div class="hero min-h-screen bg-secondary">
         <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="/boy_aboutme.jpg" alt="James Weatherford Young">
+            <LazyNuxtPicture src="/boy_aboutme.jpg" alt="James Weatherford Young" class="max-w-sm rounded-lg shadow-2xl"
+                format="webp" />
             <div class="prose sm:prose-xl">
                 <p>Since I was a member of the Toy Train Operating Society, Southern Pacific Division, in Los Angeles, I
                     began
